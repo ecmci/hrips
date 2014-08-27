@@ -1,0 +1,76 @@
+<!-- Elem -->
+	<tr id="myelem"><td><input type="checkbox" name="chkBox[0]">&nbsp;<?php echo $form->dropDownList($modEduc,'EducLevel[]',CHtml::listData(EmpEduclvl::model()->findAll(array('order'=>'ID asc')),'ID','EducLevel'),array('required'=>'required','options'=>array(1=>array('selected'=>'selected')),'style'=>"width: 150px;")); //,array('htmlOptions' => array('3'=>array('selected'=>true))) ?> </td> 
+	
+	<td><?php echo $form->textField($modEduc,'NameofSchool[]',array('size'=>60,'maxlength'=>250)); ?></td>
+	
+	<td><?php echo $form->textField($modEduc,'DegreeCourse[]',array('size'=>60,'maxlength'=>100)); ?></td>
+	
+	<td><?php echo $form->dropDownList($modEduc,'YearGrad',$arrYears,array('options' => array($yearNow=>array('selected'=>true)),'style'=>"width: 80px;")); ?></td>
+	
+	<td><?php echo $form->textField($modEduc,'HighestEarned[]',array('size'=>60,'maxlength'=>100)); ?></td>
+	
+	<td><?php echo $form->dropDownList($modEduc,'FromDate[]',$arrYears,array('options' => array($yearNow=>array('selected'=>true)),'style'=>"width: 80px;")); ?></td>
+		
+	<td><?php echo $form->dropDownList($modEduc,'ToDate[]',$arrYears,array('options' => array($yearNow=>array('selected'=>true)),'style'=>"width: 80px;")); ?></td>
+	
+	<td><?php echo $form->textArea($modEduc,'ScholarshipReceived[]',array('rows'=>6, 'cols'=>30, 'style'=>'width: 250px; height: 17px;')); ?></td>
+	
+	</tr> 
+	
+	<!-- HS -->
+	<tr id="myhs"><td><input type="checkbox" name="chkBox[1]">&nbsp;<?php echo $form->dropDownList($modEduc,'EducLevel[]',CHtml::listData(EmpEduclvl::model()->findAll(array('order'=>'ID asc')),'ID','EducLevel'),array('required'=>'required','options'=>array(2=>array('selected'=>'selected')),'style'=>"width: 150px;")); //,array('htmlOptions' => array('3'=>array('selected'=>true))) ?></td> 
+	
+	<td><?php echo $form->textField($modEduc,'NameofSchool[]',array('size'=>60,'maxlength'=>250)); ?></td>
+	
+	<td><?php echo $form->textField($modEduc,'DegreeCourse[]',array('size'=>60,'maxlength'=>100)); ?></td>
+	
+	<td><?php echo $form->dropDownList($modEduc,'YearGrad',$arrYears,array('options' => array($yearNow=>array('selected'=>true)),'style'=>"width: 80px;")); ?></td>
+	
+	<td><?php echo $form->textField($modEduc,'HighestEarned[]',array('size'=>60,'maxlength'=>100)); ?></td>
+	
+	<td><?php echo $form->dropDownList($modEduc,'FromDate[]',$arrYears,array('options' => array($yearNow=>array('selected'=>true)),'style'=>"width: 80px;")); ?></td>
+		
+	<td><?php echo $form->dropDownList($modEduc,'ToDate[]',$arrYears,array('options' => array($yearNow=>array('selected'=>true)),'style'=>"width: 80px;")); ?></td>
+	
+	<td><?php echo $form->textArea($modEduc,'ScholarshipReceived[]',array('rows'=>6, 'cols'=>30, 'style'=>'width: 250px; height: 17px;')); ?></td>
+	
+	</tr> 
+	
+	<!-- Vocational -->
+	<tr id="myvocational"><td><input type="checkbox" name="chkBox[2]">&nbsp;<?php echo $form->dropDownList($modEduc,'EducLevel[]',CHtml::listData(EmpEduclvl::model()->findAll(array('order'=>'ID asc')),'ID','EducLevel'),array('required'=>'required','options'=>array(3=>array('selected'=>'selected')),'style'=>"width: 150px;")); ?></td> 
+	
+	<td><?php echo $form->textField($modEduc,'NameofSchool[]',array('size'=>60,'maxlength'=>250)); ?></td>
+	
+	<td><?php echo $form->textField($modEduc,'DegreeCourse[]',array('size'=>60,'maxlength'=>100)); ?></td>
+	
+	<td><?php echo $form->dropDownList($modEduc,'YearGrad[]',$arrYears,array('options' => array($yearNow=>array('selected'=>true)),'style'=>"width: 80px;")); ?></td>
+	
+	<td><?php echo $form->textField($modEduc,'HighestEarned[]',array('size'=>60,'maxlength'=>100)); ?></td>
+	
+	<td><?php echo $form->dropDownList($modEduc,'FromDate[]',$arrYears,array('options' => array($yearNow=>array('selected'=>true)),'style'=>"width: 80px;")); ?></td>
+		
+	<td><?php echo $form->dropDownList($modEduc,'ToDate[]',$arrYears,array('options' => array($yearNow=>array('selected'=>true)),'style'=>"width: 80px;")); ?></td>
+	
+	<td><?php echo $form->textArea($modEduc,'ScholarshipReceived[]',array('rows'=>6, 'cols'=>30, 'style'=>'width: 250px; height: 17px;')); ?></td>
+	
+	</tr> 
+	
+	<!-- College -->
+	<tr id="mycollege"><td><input type="checkbox" name="chkBox[3]">&nbsp;<?php echo $form->dropDownList($modEduc,'EducLevel[]',CHtml::listData(EmpEduclvl::model()->findAll(array('order'=>'ID asc')),'ID','EducLevel'),array('required'=>'required','options'=>array(4=>array('selected'=>'selected')),'style'=>"width: 150px;")); //,array('htmlOptions' => array('3'=>array('selected'=>true))) ?></td> 
+	
+	<td><?php echo $form->textField($modEduc,'NameofSchool[]',array('size'=>60,'maxlength'=>250)); ?></td>
+	
+	<td><?php echo $form->textField($modEduc,'DegreeCourse[]',array('size'=>60,'maxlength'=>100)); ?></td>
+	
+	<td><?php echo $form->dropDownList($modEduc,'YearGrad[]',$arrYears,array('options' => array($yearNow=>array('selected'=>true)),'style'=>"width: 80px;")); ?></td>
+	
+	<td><?php echo $form->textField($modEduc,'HighestEarned[]',array('size'=>60,'maxlength'=>100)); ?></td>
+	
+	<td><?php echo $form->dropDownList($modEduc,'FromDate[]',$arrYears,array('options' => array($yearNow=>array('selected'=>true)),'style'=>"width: 80px;")); ?></td>
+		
+	<td><?php echo $form->dropDownList($modEduc,'ToDate[]',$arrYears,array('options' => array($yearNow=>array('selected'=>true)),'style'=>"width: 80px;")); ?></td>
+	
+	<td><?php echo $form->textArea($modEduc,'ScholarshipReceived[]',array('rows'=>6, 'cols'=>30, 'style'=>'width: 250px; height: 17px;')); ?></td>
+	
+	</tr> 
+	

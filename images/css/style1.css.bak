@@ -1,0 +1,13 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+#header-container {
+	background-color: #1B1B1B;
+    background-image: linear-gradient(to bottom, #468847, #111111);
+    background-repeat: repeat-x;
+    border-color: #252525;
+	color: #ffffff;
+	padding-bottom: 1px;
+	padding-left: 1px;
+}

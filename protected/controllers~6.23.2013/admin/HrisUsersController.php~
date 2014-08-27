@@ -1,0 +1,98 @@
+<?php
+
+class HrisUsersController extends GxController {
+
+public function filters() {
+	return array(
+			'accessControl', 
+			);
+}
+
+public function accessRules() {
+	return array(
+			array('allow', 
+				'actions'=>array('admin','create','update','delete','index','view'),
+				'roles'=>array('admin'),
+				),
+			array('deny', 
+				'users'=>array('*'),
+				),
+			);
+}
+
+	public function actionView($id) {
+		$this->render('view', array(
+			'model' => $this->loadModel($id, 'HrisUsers'),
+		));
+	}
+
+	public function actionCreate() {
+		$model = new HrisUsers;
+
+		$this->performAjaxValidation($model, 'hris-users-form');
+
+		if (isset($_POST['HrisUsers'])) {
+			$model->setAttributes($_POST['HrisUsers']);
+
+			if ($model->save()) {
+				if (Yii::app()->getRequest()->getIsAjaxRequest())
+					Yii::app()->end();
+				else
+					$this->redirect(array('view', 'id' => $model->emp_id));
+			}
+		}
+
+		$this->render('create', array( 'model' => $model));
+	}
+
+	public function actionUpdate($id) {
+		$model = $this->loadModel($id, 'HrisUsers');
+
+		$this->performAjaxValidation($model, 'hris-users-form');
+
+		if (isset($_POST['HrisUsers'])) {
+			$model->setAttributes($_POST['HrisUsers']);
+			//$model->reset_pass = $_POST['HrisUsers']['reset_pass'];
+			//echo var_dump($model->reset_pass);exit();
+
+			if ($model->save()) {				
+				$this->redirect(array('view', 'id' => $model->emp_id));
+			}
+		}
+
+		$this->render('update', array(
+				'model' => $model,
+				));
+	}
+
+	public function actionDelete($id) {
+		if (Yii::app()->getRequest()->getIsPostRequest()) {
+			$this->loadModel($id, 'HrisUsers')->delete();
+
+			if (!Yii::app()->getRequest()->getIsAjaxRequest())
+				$this->redirect(array('admin'));
+		} else
+			throw new CHttpException(400, Yii::t('app', 'Your request is invalid.'));
+	}
+
+	public function actionIndex() {
+		/*$dataProvider = new CActiveDataProvider('HrisUsers');
+		$this->render('index', array(
+			'dataProvider' => $dataProvider,
+		));*/
+		$this->actionAdmin();
+	}
+
+	public function actionAdmin() {
+		$model = new HrisUsers('search');
+		$model->unsetAttributes();
+
+		if (isset($_GET['HrisUsers']))
+			$model->setAttributes($_GET['HrisUsers']);
+
+		$this->render('admin', array(
+			'model' => $model,
+		));
+	}
+
+}

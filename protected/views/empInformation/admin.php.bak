@@ -1,0 +1,98 @@
+<?php
+/* @var $this EmpInformationController */
+/* @var $model EmpInformation */
+
+$this->breadcrumbs=array(
+	'Emp Informations'=>array('index'),
+	'Manage',
+);
+
+$this->menu=array(
+	//array('label'=>'List EmpInformation', 'url'=>array('index')),
+	array('label'=>'Create PDS', 'url'=>array('create')),
+	array('label'=>'View my PDS', 'url'=>array('view', 'id'=>Yii::app()->user->emp_id)),
+);
+
+Yii::app()->clientScript->registerScript('search', "
+$('.search-button').click(function(){
+	$('.search-form').toggle();
+	return false;
+});
+$('.search-form form').submit(function(){
+	$('#emp-information-grid').yiiGridView('update', {
+		data: $(this).serialize()
+	});
+	return false;
+});
+");
+?>
+
+<h1>Manage PDS</h1>
+
+<p>
+You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
+or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
+</p>
+
+<?php //echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
+<div class="search-form" style="display:none">
+<?php $this->renderPartial('_search',array(
+	'model'=>$model,
+)); ?>
+</div><!-- search-form -->
+
+<?php $this->widget('zii.widgets.grid.CGridView', array(
+	'id'=>'emp-information-grid',
+	'dataProvider'=>$model->search(),
+	'filter'=>$model,
+	'columns'=>array(
+		'EmpID',
+		'FirstName',
+		'LastName',
+		'MiddleName',
+		'NameExt',
+		'EmpName',
+		/*
+		'ResidentialAddress',
+		'RAZipCode',
+		'RATelno',
+		'HomeAddress',
+		'HAZipCode',
+		'HATelno',
+		'ContactNo',
+		'BirthDate',
+		'BdayPlace',
+		'Gender',
+		'CivilStat',
+		'Citizenship',
+		'Height',
+		'Weight',
+		'BloodType',
+		'DateHire',
+		'DateRehire',
+		'DateResignation',
+		'DateTermination',
+		'DateRetirement',
+		'SSS',
+		'TIN',
+		'PHIC',
+		'HDMF',
+		'AcctNo',
+		'AgencyEmpNo',
+		'Department',
+		'Position',
+		'ExtensionNo',
+		'OfficeSeatLocation',
+		'EmailAddress',
+		'Tenant',
+		'BedNo',
+		'Allowance',
+		'DateAPE',
+		'CertifyTrue',
+		'NewEmp',
+		*/
+		array(
+			'class'=>'CButtonColumn',
+		),
+	),
+)); ?>

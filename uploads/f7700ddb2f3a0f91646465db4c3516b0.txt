@@ -1,0 +1,29 @@
+ECMCI-403
+admin password 192.168.1.3 / admin / logmein19**
+
+NETGEAR-FN???
+admin password 192.168.1.8 / admin / logmein19**
+
+TENANTS-RM
+admin access at 192.168.1.2 / admin / logmein19**
+
+ECMCI-GF
+admin access at 192.168.1.4 / admin / logmein19**
+admin access at 192.168.1.8 / admin / logmein19**
+
+ECMCI CF: 
+admin access at 192.168.1.5 / admin / logmein19**
+
+ECMCI FN:
+admin access at 192.168.1.6 / admin / logmein19**
+
+ECMCI-304:
+admin access at 192.168.1.7 / admin / logmein19**
+
+ECMCI-TP Access: (direct DSL line 2Mbps)
+admin access at 192.168.0.1 / admin / logmein19**
+
+ECMCI-WiFi Pass: logmein@5524
+All Access: ecmci5524
+
+logmein1937

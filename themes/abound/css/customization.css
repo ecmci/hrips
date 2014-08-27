@@ -1,0 +1,48 @@
+/* custom styles */
+.navbar-inverse .navbar-inner {
+    background-color: #1B1B1B;
+    background-image: linear-gradient(to bottom, #468847, #111111);
+    background-repeat: repeat-x;
+    border-color: #252525;
+}
+select {
+	line-height: 10px;
+}
+.label-bold{font-weight:bold; text-align: right !important;}
+.td-header{background-color: #F5F5F5; font-size: 14px; text-align: center !important;}
+/*tr.row_urgent{color:red;}*/
+span.fieldko{
+    float:left;
+    margin-right:75px;
+}
+.container-fluid{
+	/*padding-top: 50px;	*/
+}
+.ui-datepicker{
+    z-index: 2000 !important;
+}
+.center {
+     float: none;
+     margin-left: auto;
+     margin-right: auto; }
+    }
+a.brand{
+	font-size:15px;
+}
+.search-button{
+	font-size:14pt;
+}
+.letter-print{
+  width:8.5in;
+  padding:0.25in;
+}
+a.btn{
+  height:17px;
+  vertical-align:middle;  
+}
+div.center {
+     float: none;
+     margin-left: auto;
+     margin-right: auto;
+}
+
