@@ -6,7 +6,9 @@ Released under the MIT License <http://www.opensource.org/licenses/mit-license.p
 */
 
 // Define a destination
-$targetFolder = (isset($_REQUEST['baseurl']))? $_REQUEST['baseurl'].'/uploads' : '/uploads'; // Relative to the root
+$targetFolder = (isset($_REQUEST['baseurl']))? $_REQUEST['baseurl'].'/uploads' : '/hrips/uploads'; // Relative to the root
+
+
 
 if (!empty($_FILES)) {
 	$tempFile = $_FILES['Filedata']['tmp_name'];

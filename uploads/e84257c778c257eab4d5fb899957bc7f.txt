@@ -1,0 +1,10 @@
+-- to generate rate change movement raw data --
+SELECT c.title AS Facility, d.name AS Department, e.last_name AS LastName, e.first_name AS FirstName, b.rate_approved AS RateApproved, b.rate_effective_date AS RateEffectiveDate
+FROM  `hr_workflow_change_notice` t
+LEFT JOIN hr_employee_employment a ON a.id = t.employment_profile_id
+LEFT JOIN facility c ON c.idFACILITY = a.facility_id
+LEFT JOIN hr_department d ON d.code = a.department_code
+LEFT JOIN hr_employee e ON e.emp_id = a.emp_id
+LEFT JOIN hr_employee_payroll b ON b.id = t.payroll_profile_id
+WHERE t.status =  'APPROVED'
+ORDER BY a.facility_id ASC , a.department_code ASC , e.last_name ASC 

@@ -25,8 +25,8 @@ class HrisLoaApplicationReport extends BaseHrisLoaApplicationReport
 		return array(
 			'id' => Yii::t('app', 'ID'),
 			'emp_id' => Yii::t('app', 'Employee'),
-      'dept_id' => Yii::t('app', 'Department'),
-      'next_lvl_id' => Yii::t('app', 'Status'),
+                        'dept_id' => Yii::t('app', 'Department'),
+                        'next_lvl_id' => Yii::t('app', 'Status'),
 			'job_code_id' => Yii::t('app', 'Type'),
 			'from_datetime' => Yii::t('app', 'From Datetime'),
 			'to_datetime' => Yii::t('app', 'To Datetime'),
@@ -36,21 +36,27 @@ class HrisLoaApplicationReport extends BaseHrisLoaApplicationReport
 			'reliever_approve' => Yii::t('app', 'Reliever Approve'),
 			'reliever_approve_datetime' => Yii::t('app', 'Reliever Approve Datetime'),
 			'sup_id' => Yii::t('app', 'Supervisor'),
-			'sup_approve' => Yii::t('app', 'Sup Approve'),
-			'sup_approve_datetime' => Yii::t('app', 'Sup Approve Datetime'),
-			'sup_disapprove_reason' => Yii::t('app', 'Sup Disapprove Reason'),
-			'hr_id' => Yii::t('app', 'HR'),
+			'sup_approve' => Yii::t('app', 'Supervisor Approve'),
+			'sup_approve_datetime' => Yii::t('app', 'Supervisor Approve Datetime'),
+			'sup_disapprove_reason' => Yii::t('app', 'Supervisor Disapprove Reason'),
+			'mgr_id' => Yii::t('app', 'Manager'),
+                        'mgr_approve' => Yii::t('app', 'Manager Approve'),
+			'mgr_approve_datetime' => Yii::t('app', 'Manager Approve Datetime'),
+			'mgr_disapprove_reason' => Yii::t('app', 'Manager Disapprove Reason'),
+                        'hr_id' => Yii::t('app', 'HR'),
 			'hr_approve' => Yii::t('app', 'Hr Approve'),
-			'hr_approve_datetime' => Yii::t('app', 'Hr Approve Datetime'),
-			'hr_disapprove_reason' => Yii::t('app', 'Hr Disapprove Reason'),
+			'hr_approve_datetime' => Yii::t('app', 'HR Approve Datetime'),
+			'hr_disapprove_reason' => Yii::t('app', 'HR Disapprove Reason'),
 			'emp' => Yii::t('app', 'Employee'),
 			'jobCode' => Yii::t('app', 'Type'),
 			'reliever' => Yii::t('app', 'Reliever'),
 			'sup' => Yii::t('app', 'Supervisor'),
 			'hr' => Yii::t('app', 'HR'),
 			'hrisLoaAttachments' => Yii::t('app', 'Attachments'),
-      'nextLvl' => Yii::t('app', 'Status'),
-      'dept' => Yii::t('app', 'Department'),
+                        'nextLvl' => Yii::t('app', 'Status'),
+                        'dept' => Yii::t('app', 'Department'),
+                        'timestamp' => Yii::t('app', 'Date Submitted'),
+                        'replicated_to_emp_hrs' => Yii::t('app', 'Entered Into Employee Hours'),
 		);
 	}
 	
@@ -152,5 +158,28 @@ class HrisLoaApplicationReport extends BaseHrisLoaApplicationReport
 	
 	public static function label($n = 1) {
 		return Yii::t('app', 'LOA Application|LOA Applications', $n);
+	}
+        
+        public function getHeaderTitle(){
+		$status = "Unknown";	
+		$employee = $this->emp->Lname.'('.$this->emp_id.')';
+		$loa_type = $this->jobCode->title;
+		/* if($this->reliever_approve === NULL)
+			return "Waiting on Reliever | $employee | $loa_type";
+		if($this->sup_approve === NULL)
+			return "Waiting on Supervisor | $employee | $loa_type";
+		if($this->hr_approve === NULL)
+			return "Waiting on HR | $employee | $loa_type"; */
+		switch($this->next_lvl_id){
+			case HrisAccessLvl::$ULTIMATELY_APPROVED:
+				$status = "Approved";
+			break;
+			case HrisAccessLvl::$ULTIMATELY_DENIED:
+				$status = "Denied";
+			break;
+			
+			default:$status="".$this->nextLvl->status." | $employee | $loa_type";
+		}
+		return $status;
 	}
 }

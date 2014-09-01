@@ -1,3 +1,27 @@
+<?php 
+Yii::app()->clientScript->registerScript('check-flash-js',"
+var hasFlash = false;
+try {
+  var fo = new ActiveXObject('ShockwaveFlash.ShockwaveFlash');
+  if (fo) {
+    hasFlash = true;
+  }
+} catch (e) {
+  if (navigator.mimeTypes
+        && navigator.mimeTypes['application/x-shockwave-flash'] != undefined
+        && navigator.mimeTypes['application/x-shockwave-flash'].enabledPlugin) {
+    hasFlash = true;
+  }
+}
+if(hasFlash){
+    $('#no-flash-message').hide();
+    $('#flash-present').show();
+}else{
+    $('#no-flash-message').show();
+    $('#flash-present').hide();
+}
+",CClientScript::POS_READY);
+?>
 <?php //Yii::app()->clientScript->registerCoreScript('jquery'); ?>
 <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->getBaseUrl().'/js/uploadify/jquery.uploadify-3.1.min.js'); ?>
 <?php Yii::app()->clientScript->registerCssFile(Yii::app()->getBaseUrl().'/js/uploadify/uploadify.css'); ?>
@@ -43,9 +67,16 @@
 		});
 	});
 </script>
+<div class="alert alert-error" id="no-flash-message">
+    <h3>Warning!</h3>
+    <p>Upload function will not work because Adobe flash player is either disabled or not installed in this browser. Please call IT for assistance.</p>    
+</div>
+
+<div id="flash-present">
 <input type="file" name="file_upload" id="file_upload" />
 <p class="hint">Upload relevant files here. Word, PDF, Excel, Pictures and any other files are accepted. Limit is 5MB per file.</p>
 <!--<a href="#uploads_container" onclick="javascript:$('#file_upload').uploadify('upload','*')">Upload Files</a>-->
+</div>
 
 <div id="uploads_container">
 	<h5>Uploaded Attachments</h5>	

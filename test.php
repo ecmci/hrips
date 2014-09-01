@@ -9,4 +9,5 @@
 echo "now is: ".date('Y-m-d H:i:s',time());
 echo '<br>';
 echo "yesterday is: ".date('Y-m-d 16:30:00',strtotime('-1 days',time()));
+phpinfo();
 ?>

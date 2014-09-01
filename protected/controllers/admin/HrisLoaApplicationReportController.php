@@ -93,7 +93,7 @@ public function accessRules() {
 	}
 
 	public function actionUpdate($id) {
-		$model = $this->loadModel($id, 'HrisLoaApplicationReport');
+            $model = $this->loadModel($id, 'HrisLoaApplicationReport');
 
 
 		if (isset($_POST['HrisLoaApplicationReport'])) {

@@ -8,16 +8,11 @@ $this->breadcrumbs = array(
 $this->menu=array(
 	array('label'=>Yii::t('app', 'Update') . ' ' . $model->label(), 'url'=>array('update', 'id' => $model->id)),
 	array('label'=>Yii::t('app', 'Back to My') . ' ' . $model->label(2), 'url'=>array('admin')),
-  array('label'=>Yii::t('app', 'Printer Friendly Page'), 'url'=>array(Yii::app()->controller->id.'/print/'.$model->id),'linkOptions'=>array('target'=>'_blank')),
-	//array('label'=>Yii::t('app', 'Create') . ' ' . $model->label(), 'url'=>array('create')),
-	//array('label'=>Yii::t('app', 'Update') . ' ' . $model->label(), 'url'=>array('update', 'id' => $model->id)),
-	//array('label'=>Yii::t('app', 'Delete') . ' ' . $model->label(), 'url'=>'#', 'linkOptions' => array('submit' => array('delete', 'id' => $model->id), 'confirm'=>'Are you sure you want to delete this item?')),
-	//array('label'=>Yii::t('app', 'Manage') . ' ' . $model->label(2), 'url'=>array('admin')),
-	
+        array('label'=>Yii::t('app', 'Printer Friendly Page'), 'url'=>array(Yii::app()->controller->id.'/print/'.$model->id),'linkOptions'=>array('target'=>'_blank')),
+
 );
 ?>
 
-<h1><?php //echo Yii::t('app', 'View') . ' ' . GxHtml::encode($model->label()) . ' ' . GxHtml::encode(GxHtml::valueEx($model)); ?></h1>
 <h3><?php echo $model->getHeaderTitle(); ?></h3>
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data' => $model,

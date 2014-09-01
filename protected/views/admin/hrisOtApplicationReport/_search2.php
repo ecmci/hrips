@@ -61,7 +61,7 @@
 	</div>
   <div class="span3">		
 		<?php echo $form->checkBox($model, 'is_entered'); ?>
-    <?php echo CHtml::label('Show Entered Entries Only','Include Entered',array('style'=>'display:inline;')); ?>
+    <?php echo CHtml::label('Show Entered Entries','Include Entered',array('style'=>'display:inline;')); ?>
 	</div>   
   </div>
 

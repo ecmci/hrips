@@ -6036,3 +6036,147 @@ in C:\xampp\htdocs\protected\components\UserIdentity.php (45)
 in C:\xampp\htdocs\protected\controllers\SiteController.php (159)
 2014/08/28 05:53:21 [info] [app] Login successful for user 1078 IP: 192.168.1.48
 in C:\xampp\htdocs\protected\components\UserIdentity.php (45)
+2014/08/28 06:45:45 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/08/28 06:45:47 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/08/28 06:46:01 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/08/28 06:46:07 [info] [app] Login successful for user 1078 IP: 192.168.1.48
+in /var/www/html/hrips/protected/components/UserIdentity.php (45)
+2014/08/28 06:53:16 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/08/28 06:53:27 [info] [app] Login successful for user 1078 IP: 192.168.1.48
+in /var/www/html/hrips/protected/components/UserIdentity.php (45)
+2014/08/28 06:53:31 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/08/28 06:53:32 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/08/28 09:31:06 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/08/28 09:31:12 [info] [app] Login successful for user 1078 IP: 192.168.1.48
+in /var/www/html/hrips/protected/components/UserIdentity.php (45)
+2014/08/28 09:31:37 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/08/28 09:31:42 [info] [app] Login successful for user 1078 IP: 192.168.1.48
+in /var/www/html/hrips/protected/components/UserIdentity.php (45)
+2014/08/28 09:45:59 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/08/28 09:46:01 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/08/28 09:55:04 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/08/28 09:57:33 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/08/28 09:57:43 [info] [app] Login successful for user 1078 IP: 192.168.1.48
+in /var/www/html/hrips/protected/components/UserIdentity.php (45)
+2014/08/29 07:07:36 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/08/29 07:24:30 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/08/29 07:25:07 [info] [app] Login successful for user 1078 IP: 192.168.1.48
+in /var/www/html/hrips/protected/components/UserIdentity.php (45)
+2014/08/29 07:45:42 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/08/29 07:46:06 [info] [app] Login successful for user 1078 IP: 192.168.1.48
+in /var/www/html/hrips/protected/components/UserIdentity.php (45)
+2014/08/29 07:51:24 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/08/29 07:51:34 [info] [app] Login successful for user 1078 IP: 192.168.1.48
+in /var/www/html/hrips/protected/components/UserIdentity.php (45)
+2014/08/29 07:58:24 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/08/29 09:20:10 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/08/29 09:20:17 [info] [app] Login successful for user 1078 IP: 192.168.1.48
+in /var/www/html/hrips/protected/components/UserIdentity.php (45)
+2014/08/29 12:12:42 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/08/29 12:12:51 [info] [app] Login successful for user 1078 IP: 192.168.1.48
+in /var/www/html/hrips/protected/components/UserIdentity.php (45)
+2014/08/29 12:13:48 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/09/01 08:06:48 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/09/01 09:49:31 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/09/01 09:49:39 [info] [app] Login successful for user 1078 IP: 192.168.1.48
+in /var/www/html/hrips/protected/components/UserIdentity.php (45)
+2014/09/01 09:50:46 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/09/01 09:53:39 [info] [app] Visitor from IP 192.168.1.254
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/09/01 09:53:42 [info] [app] No such user arlene.f@evacare.com IP: 192.168.1.254
+in /var/www/html/hrips/protected/components/UserIdentity.php (39)
+2014/09/01 09:53:42 [info] [app] Visitor from IP 192.168.1.254
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/09/01 09:53:48 [info] [app] No such user arlene.f@evacare.com IP: 192.168.1.254
+in /var/www/html/hrips/protected/components/UserIdentity.php (39)
+2014/09/01 09:53:48 [info] [app] Visitor from IP 192.168.1.254
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/09/01 09:54:00 [info] [app] Login successful for user 1141 IP: 192.168.1.254
+in /var/www/html/hrips/protected/components/UserIdentity.php (45)
+2014/09/01 09:55:25 [info] [app] Visitor from IP 192.168.1.254
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/09/01 09:55:33 [info] [app] Login successful for user 1141 IP: 192.168.1.254
+in /var/www/html/hrips/protected/components/UserIdentity.php (45)
+2014/09/01 09:58:04 [info] [app] Visitor from IP 192.168.1.254
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/09/01 10:07:16 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/09/01 10:07:48 [info] [app] Login successful for user 1078 IP: 192.168.1.48
+in /var/www/html/hrips/protected/components/UserIdentity.php (45)
+2014/09/01 10:12:53 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/09/01 10:13:02 [info] [app] Login successful for user 1078 IP: 192.168.1.48
+in /var/www/html/hrips/protected/components/UserIdentity.php (45)
+2014/09/01 10:19:54 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/09/01 10:20:00 [info] [app] Login successful for user 1078 IP: 192.168.1.48
+in /var/www/html/hrips/protected/components/UserIdentity.php (45)
+2014/09/01 10:20:48 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/09/01 10:20:59 [info] [app] Login successful for user 1078 IP: 192.168.1.48
+in /var/www/html/hrips/protected/components/UserIdentity.php (45)
+2014/09/01 10:31:21 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/09/01 10:31:27 [info] [app] Login successful for user 1078 IP: 192.168.1.48
+in /var/www/html/hrips/protected/components/UserIdentity.php (45)
+2014/09/01 10:40:16 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/09/01 10:40:24 [info] [app] Login successful for user 1078 IP: 192.168.1.48
+in /var/www/html/hrips/protected/components/UserIdentity.php (45)
+2014/09/01 10:45:00 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/09/01 10:45:00 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/09/01 10:45:00 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/09/01 11:33:13 [info] [app] OT Form ID 1542 modified by Steven Ly
+in /var/www/html/hrips/protected/controllers/admin/HrisOtApplicationReportController.php (103)
+2014/09/01 11:33:14 [info] [app] OT Form ID 1542 modified by Steven Ly
+in /var/www/html/hrips/protected/controllers/admin/HrisOtApplicationReportController.php (103)
+2014/09/01 11:34:31 [info] [app] OT Form ID 1542 modified by Steven Ly
+in /var/www/html/hrips/protected/controllers/admin/HrisOtApplicationReportController.php (103)
+2014/09/01 11:34:32 [info] [app] OT Form ID 1542 modified by Steven Ly
+in /var/www/html/hrips/protected/controllers/admin/HrisOtApplicationReportController.php (103)
+2014/09/01 11:34:37 [info] [app] OT Form ID 1542 modified by Steven Ly
+in /var/www/html/hrips/protected/controllers/admin/HrisOtApplicationReportController.php (103)
+2014/09/01 11:34:38 [info] [app] OT Form ID 1542 modified by Steven Ly
+in /var/www/html/hrips/protected/controllers/admin/HrisOtApplicationReportController.php (103)
+2014/09/01 11:34:43 [info] [app] OT Form ID 1542 modified by Steven Ly
+in /var/www/html/hrips/protected/controllers/admin/HrisOtApplicationReportController.php (103)
+2014/09/01 11:34:44 [info] [app] OT Form ID 1542 modified by Steven Ly
+in /var/www/html/hrips/protected/controllers/admin/HrisOtApplicationReportController.php (103)
+2014/09/01 11:34:51 [info] [app] OT Form ID 1542 modified by Steven Ly
+in /var/www/html/hrips/protected/controllers/admin/HrisOtApplicationReportController.php (103)
+2014/09/01 11:34:52 [info] [app] OT Form ID 1542 modified by Steven Ly
+in /var/www/html/hrips/protected/controllers/admin/HrisOtApplicationReportController.php (103)
+2014/09/01 11:35:06 [info] [app] OT Form ID 1542 modified by Steven Ly
+in /var/www/html/hrips/protected/controllers/admin/HrisOtApplicationReportController.php (103)
+2014/09/01 11:35:08 [info] [app] OT Form ID 1542 modified by Steven Ly
+in /var/www/html/hrips/protected/controllers/admin/HrisOtApplicationReportController.php (103)
+2014/09/01 11:35:12 [info] [app] OT Form ID 1542 modified by Steven Ly
+in /var/www/html/hrips/protected/controllers/admin/HrisOtApplicationReportController.php (103)
+2014/09/01 11:35:19 [info] [app] OT Form ID 1542 modified by Steven Ly
+in /var/www/html/hrips/protected/controllers/admin/HrisOtApplicationReportController.php (103)

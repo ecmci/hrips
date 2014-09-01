@@ -22,16 +22,15 @@ return array(
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
-		
+		'otextraction',
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
-			'password'=>'sly@28',
+			'password'=>'admin',
 			'generatorPaths' => array(
 				'ext.giix-core', // giix generators
 			),
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
-			//'ipFilters'=>array('127.0.0.1','::1'),
-			'ipFilters'=>array('127.0.0.1'),
+			'ipFilters'=>array('127.0.0.1','192.168.1.48'),
 			//'db'=>'tcdb',
 		),
 		
@@ -47,11 +46,12 @@ return array(
 		),
     
     // session time limit
+    /*
     'session'=>array(
       'class' => 'CDbHttpSession',
       'timeout'=>'28800', //end session after x seconds
     ),
-    
+    */
 		// uncomment the following to enable URLs in path-format
 		'format'=>array(
 		  'class'=>'application.components.Formatter',
@@ -76,26 +76,28 @@ return array(
 		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=evacare',
 			'emulatePrepare' => true,
-			'username' => 'hris',
-			'password' => 'hris5524',
+			'username' => 'root',
+			'password' => 'admin1937',
 			'charset' => 'utf8',
 		),
 		
 		'tcdb'=>array(		
 			'class'=>'CDbConnection',
 			//'connectionString' => 'sqlsrv:Server=localhost\TIMECLOCKPLUS,1433;Database=TimeClockPlus',//dev
-			'connectionString' => 'sqlsrv:Server=192.168.1.222\TIMECLOCKPLUS,1433;Database=TimeClockPlus', //prod via windows
-			//'connectionString' => 'dblib:host=192.168.1.222;dbname=TimeClockPlus', //prod via linux system
+			//'connectionString' => 'sqlsrv:Server=192.168.1.222\TIMECLOCKPLUS,1433;Database=TimeClockPlus', //prod via windows
+			'connectionString' => 'dblib:host=192.168.1.222;dbname=TimeClockPlus', //prod via linux system
 			'username' => 'hris',
 			'password' => 'hris5524',
 			'charset' => 'utf8',
 			//'emulatePrepare' => false,
 		),
-    
+                
+                 
+    /*
     'sp'=>array(
        'class'=>'CDbConnection',
 			 'connectionString' => 'sqlite:c:/Program Files/Spiceworks/db/spiceworks_prod.db',       
-		),
+		),*/
 	
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
@@ -132,6 +134,6 @@ return array(
 		'noreply'=>'noreply@ecmci.com',
 		'adminEmail'=>'steven.l@evacare.com',
 		'dateFormat'=>'j-M-Y g:i A',
-    'spiceworksDSN'=>'sqlite:c:/Program Files/Spiceworks/db/spiceworks_prod.db;version=2',
+                //'spiceworksDSN'=>'sqlite:c:/Program Files/Spiceworks/db/spiceworks_prod.db;version=2',
 	),
 );

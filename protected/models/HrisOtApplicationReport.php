@@ -137,7 +137,7 @@ class HrisOtApplicationReport extends BaseHrisOtApplicationReport
   			case HrisAccessLvl::$EMPLOYEE:
   				$status = "Reason Pending"." | $employee | $loa_type";
   			break;
-  			default:$status="Waiting on ".$this->nextLvl->status." | $employee | $loa_type";
+  			default:$status=$this->nextLvl->status." | $employee | $loa_type";
   		}
   		return $status;
   	}
