@@ -8,8 +8,43 @@ class HrisLoaApplication extends BaseHrisLoaApplication
 				";	
 	private $days_requested = 0;
   public $hours, $minutes;
-				
-	public function rules() {
+	
+        public function renderActionsColumn(){
+            $baseUrl = Yii::app()->createUrl('HrisLoaApplication');
+            $data = '
+              <div class="btn-group">
+                <a class="btn btn-success dropdown-toggle" data-toggle="dropdown" href="#">
+                  Action
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="'.$baseUrl.'/view/id/'.$this->id.'"><i class="icon-eye-open"></i> View</a></li>
+                  <li><a href="'.$baseUrl.'/update/id/'.$this->id.'"><i class="icon-pencil"></i> Edit</a></li>    
+                  <li><a href="#" onclick="cancelLOA('.$this->id.')"><i class="icon-trash"></i> Cancel</a></li>
+                </ul>
+              </div>
+            ';
+            echo $data;
+        } 
+
+    /**
+         * Cancels this LOA application and also removes entries from employee hours tables
+         * @return \HrisLoaApplication
+         */
+        public function cancel(){
+            $this->next_lvl_id = HrisAccessLvl::$CANCELLED;
+            $this->reason .= " | MANUALLY CANCELLED BY USER LAST ".date('m/d/Y h:i A',time());
+            
+            //also remove entries from employee_hours table
+            $c = new CDbCriteria;
+            $c->compare('job_code',$this->job_code_id);
+            $c->compare('emp_id',$this->emp_id);
+            $c->addCondition("datetime_in >= '".$this->from_datetime."' AND datetime_out <= '".$this->to_datetime."'");
+            EmployeeHrs::model()->deleteAll($c);
+            return $this;
+        }
+  
+        public function rules() {
 		return array(
 			array('emp_id, job_code_id, from_datetime, to_datetime, reason, reliever_id, hours, minutes', 'required'),
 			array('emp_id, job_code_id, reliever_id, reliever_approve, sup_id, sup_approve, hr_id, hr_approve', 'numerical', 'integerOnly'=>true),

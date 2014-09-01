@@ -13,7 +13,7 @@ public function filters() {
 public function accessRules() {
 	return array(
 			array('allow', 
-				'actions'=>array('update','index','view','minicreate', 'create','admin','formyapproval','formyapprovalview','test','print'),
+				'actions'=>array('update','index','view','minicreate', 'create','admin','formyapproval','formyapprovalview','test','print','cancel'),
 				'users'=>array('@'),
 				),
 		

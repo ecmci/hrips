@@ -29,6 +29,20 @@ $('.search-form form').submit(function(){
 });
 
 ");
+
+Yii::app()->clientScript->registerScript('search', "
+function cancelLOA(id){
+  if(confirm('Are you sure you want to CANCEL this LOA application?')){
+    var url = '".Yii::app()->createAbsoluteUrl('hrisLoaApplication/cancel?id=')."' + id;
+    $.post(url,function(response){
+      if(response == '1')
+        $.fn.yiiGridView.update('hris-loa-application-grid');
+       else
+        alert('Unable to cancel this LOA. Please contact IT for assistance.');    
+    });
+  }
+}
+",CClientScript::POS_BEGIN);
 ?>
 
 <h1><?php echo Yii::t('app', 'Manage') . ' ' . GxHtml::encode($model->label(2)); ?></h1>
@@ -46,8 +60,8 @@ $('.search-form form').submit(function(){
  	$this->widget('zii.widgets.grid.CGridView', array(
 	'id' => 'hris-loa-application-grid',
 	'dataProvider' => $model->search(),
-	'htmlOptions'=>array('class'=>'table table-hover table-condensed','style'=>'cursor:pointer;'),
-	'selectionChanged'=>"function(id){window.location='" . Yii::app()->urlManager->createUrl(Yii::app()->controller->id.'/view', array('id'=>'')) . "' + $.fn.yiiGridView.getSelection(id);}",
+	'htmlOptions'=>array('class'=>'table table-hover table-condensed'),
+	//'selectionChanged'=>"function(id){window.location='" . Yii::app()->urlManager->createUrl(Yii::app()->controller->id.'/view', array('id'=>'')) . "' + $.fn.yiiGridView.getSelection(id);}",
 	'selectableRows'=>'10',	
 	'filter' => $model,
 	'columns' => array(
@@ -62,7 +76,12 @@ $('.search-form form').submit(function(){
       	'checkBoxHtmlOptions'=>array('name'=>'id[]'),   	
       ),*/
 
-		'id',
+            array(
+                'header'=>'Actions',
+                'value'=>'$data->renderActionsColumn()',
+            ),
+            'id',
+                
 		/*array(
 				'name'=>'emp_id',
 				'value'=>'$data->emp->getEmpIdFullName()',
@@ -139,11 +158,11 @@ $('.search-form form').submit(function(){
 					),
 		'hr_approve_datetime',
 		'hr_disapprove_reason',
-		*/
+		
 		array(
 			'class' => 'CButtonColumn',
 		),
-		
+		*/
 	),
 )); 
 

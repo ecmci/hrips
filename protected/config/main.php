@@ -79,6 +79,7 @@ return array(
 			'username' => 'root',
 			'password' => 'admin1937',
 			'charset' => 'utf8',
+                        'enableParamLogging' => true,
 		),
 		
 		'tcdb'=>array(		
@@ -117,12 +118,12 @@ return array(
 					'logFile'=>'admin_log.txt',
 				),
 				// uncomment the following to show log messages on web pages
-				/*
+				
 				array(
 					'class'=>'CWebLogRoute',
 					'levels'=>'error, warning, info, notice, trace',
 				),
-				*/
+				
 			),
 		),
 	),

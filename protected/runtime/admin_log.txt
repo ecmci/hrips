@@ -6180,3 +6180,9 @@ in /var/www/html/hrips/protected/controllers/admin/HrisOtApplicationReportContro
 in /var/www/html/hrips/protected/controllers/admin/HrisOtApplicationReportController.php (103)
 2014/09/01 11:35:19 [info] [app] OT Form ID 1542 modified by Steven Ly
 in /var/www/html/hrips/protected/controllers/admin/HrisOtApplicationReportController.php (103)
+2014/09/01 15:29:44 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/09/01 15:29:50 [info] [app] Login successful for user 1078 IP: 192.168.1.48
+in /var/www/html/hrips/protected/components/UserIdentity.php (45)
+2014/09/01 15:55:08 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
