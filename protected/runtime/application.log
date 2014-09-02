@@ -1708,3 +1708,116 @@ Stack trace:
 #10 /var/www/html/hrips/index.php(14): CWebApplication->run()
 REQUEST_URI=/hrips/index.php/hrisLoaApplication/deny
 in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (24)
+2014/09/03 06:11:06 [error] [app] Array
+(
+    [edit] => 1
+    [id] => 1552
+    [hours] => 4
+    [minutes] => 00
+    [sub_code_id] => 2001-13
+)
+
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (25)
+2014/09/03 06:11:23 [error] [app] Array
+(
+    [edit] => 1
+    [id] => 1562
+    [hours] => 0
+    [minutes] => 56
+    [sub_code_id] => 2001-10
+)
+
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (25)
+2014/09/03 06:11:30 [error] [app] Array
+(
+    [edit] => 1
+    [id] => 1562
+    [hours] => 4
+    [minutes] => 56
+    [sub_code_id] => 2001-10
+)
+
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (25)
+2014/09/03 06:11:37 [error] [app] Array
+(
+    [edit] => 1
+    [id] => 1562
+    [hours] => 4
+    [minutes] => 56
+    [sub_code_id] => 2001-11
+)
+
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (25)
+2014/09/03 06:11:43 [error] [app] Array
+(
+    [edit] => 1
+    [id] => 1562
+    [hours] => 4
+    [minutes] => 56
+    [sub_code_id] => 2001-10
+)
+
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (25)
+2014/09/03 06:32:18 [error] [exception.CException] exception 'CException' with message 'HrisOtApplicationController and its behaviors do not have a method or closure named "model".' in /var/www/html/hrips/yii/framework/base/CComponent.php:265
+Stack trace:
+#0 /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php(25): CComponent->__call('model', Array)
+#1 /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php(25): HrisOtApplicationController->model()
+#2 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisOtApplicationController->actionSave()
+#3 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('save')
+#12 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('hrisOtApplicati...')
+#13 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /var/www/html/hrips/index.php(14): CApplication->run()
+#15 {main}
+REQUEST_URI=/hrips/index.php/hrisOtApplication/save
+HTTP_REFERER=https://192.168.1.231/hrips/index.php/hrisOtApplication/formyapproval
+---
+2014/09/03 06:34:52 [error] [php] Undefined offset: 2 (/var/www/html/hrips/protected/models/HrisOtApplication0.php:330)
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/CBaseController.php(95): HrisOtApplicationController->renderInternal()
+#1 /var/www/html/hrips/yii/framework/web/CController.php(869): HrisOtApplicationController->renderFile()
+#2 /var/www/html/hrips/yii/framework/web/CController.php(782): HrisOtApplicationController->renderPartial()
+#3 /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php(50): HrisOtApplicationController->render()
+#4 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisOtApplicationController->actionFormyapproval()
+#5 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): HrisOtApplicationController->runAction()
+#7 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/html/hrips/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#9 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): HrisOtApplicationController->filterAccessControl()
+#10 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/html/hrips/yii/framework/web/CController.php(265): HrisOtApplicationController->runActionWithFilters()
+#13 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): HrisOtApplicationController->run()
+#14 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/html/hrips/index.php(14): CWebApplication->run()
+REQUEST_URI=/hrips/index.php/hrisOtApplication/formyapproval
+in /var/www/html/hrips/protected/models/HrisOtApplication0.php (330)
+2014/09/03 07:19:52 [error] [php] Undefined variable: diff (/var/www/html/hrips/protected/models/HrisOtApplication.php:88)
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/CBaseController.php(95): HrisOtApplicationController->renderInternal()
+#1 /var/www/html/hrips/yii/framework/web/CController.php(869): HrisOtApplicationController->renderFile()
+#2 /var/www/html/hrips/yii/framework/web/CController.php(782): HrisOtApplicationController->renderPartial()
+#3 /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php(50): HrisOtApplicationController->render()
+#4 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisOtApplicationController->actionFormyapproval()
+#5 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): HrisOtApplicationController->runAction()
+#7 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/html/hrips/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#9 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): HrisOtApplicationController->filterAccessControl()
+#10 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/html/hrips/yii/framework/web/CController.php(265): HrisOtApplicationController->runActionWithFilters()
+#13 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): HrisOtApplicationController->run()
+#14 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/html/hrips/index.php(14): CWebApplication->run()
+REQUEST_URI=/hrips/index.php/hrisOtApplication/formyapproval
+in /var/www/html/hrips/protected/models/HrisOtApplication.php (88)

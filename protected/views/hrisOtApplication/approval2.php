@@ -9,28 +9,76 @@ $ot_list = CHtml::listData(OtSubCode::model()->findAll(),"ot_code","title");
 Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/DT_bootstrap.css');
 Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/jquery.dataTables.min.js');
 Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/DT_bootstrap.js');
+Yii::app()->clientScript->registerScript('ot-approvals-begin-js',"
+    var DT = null;
+",CClientScript::POS_BEGIN);
 Yii::app()->clientScript->registerScript('ot-approvals-ready-js',"
-$('#ot-approvals').dataTable( {
-	\"sDom\": \"<'row-fluid'<'span3'f><'span3'l><'span3'p><'span3'i>r>t<'row-fluid'<'span3'f><'span3'l><'span3'p><'span3'i>r>\"
-} );
-$.extend( $.fn.dataTableExt.oStdClasses, {
-    \"sWrapper\": \"dataTables_wrapper form-inline\"
+DT = $('#ot-approvals').dataTable( {
+    'drawCallback':function(){
+        bindCheckboxEditEvt();
+    }
 } );
 ",CClientScript::POS_READY);
-Yii::app()->clientScript->registerCss('ot-approvals-css',"
-.dataTables_wrappers .rows{
-	padding-left:30px;
-}
-");
+
 Yii::app()->clientScript->registerScript('ot-approvals-js',"
+var url = '';
+var btnSave = $('#btnSave');
+var btnDeny = $('#btnDeny');
+var btnApprove = $('#btnApprove');
 function approve(){
-  alert('To implement approve');
+    alert('To implement approve');
 }
 function deny(){
-  alert('To implement deny');
+    alert('To implement deny');
 }
 function save(){
-  alert('To implement save');
+    url = '".Yii::app()->createUrl('hrisOtApplication/save')."'; 
+    btnSave.html('Saving... Please wait.');
+    submit();
+}
+function submit()
+{
+    btnSave.attr('disabled','disabled');
+    btnDeny.attr('disabled','disabled');
+    btnApprove.attr('disabled','disabled');
+    
+    var data = DT.$('input,select').serialize();
+    $.ajax({
+        url : url,
+        type : 'POST',
+        data : data,
+        success : function(data,textStatus,jqXHR){
+            $('#message-success #message').html('<h5>Success</h5><p>'+data+'</p>');
+            $('#message-success').slideDown(function(){
+                $(this).delay(5000).slideUp();
+            });
+        },
+        error : function(jqXHR,textStatus,errorThrown){
+            $('#message-error #message').html('<h5>Error '+jqXHR.status+'</h5><p>'+jqXHR.responseText+'</p>');
+            $('#message-error').slideDown(function(){
+                $(this).delay(5000).slideUp();
+            });
+        },
+        complete : function(){
+                btnSave.html('Save');
+                btnDeny.html('Deny');
+                btnApprove.html('Approve');
+
+                btnSave.removeAttr('disabled');
+                btnDeny.removeAttr('disabled');
+                btnApprove.removeAttr('disabled');
+        }
+    });
+}
+function bindCheckboxEditEvt() 
+{
+    $('.checkbox-edit').on('click',function(){
+        if($(this).is(':checked')){
+            $('#row'+$(this).val()).val('1');
+        }else{
+            $('#row'+$(this).val()).val('0');
+        }
+    });
 }
 ",CClientScript::POS_END);
 ?>
@@ -50,12 +98,17 @@ function save(){
       <th>Type</th>
       <th width="200">Reason</th>
       <th>Submitted</th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
     <?php foreach($data->getData() as $row=>$d): ?>
     <tr>
-      <td><input type="checkbox" name="row[]" value="<?php echo $row;?>"></td>
+      <td>
+          <input type="checkbox" name="row[]" class="checkbox-edit" value="<?php echo $row;?>">
+          <input type="hidden" name="ot[<?php echo $row;?>][edit]" class="" value="0" id="row<?php echo $row;?>">
+          <input type="hidden" name="ot[<?php echo $row;?>][id]" class="" value="<?php echo $d->id;?>">
+      </td>
       <td><?php echo $d->id; ?></td>
       <td><?php echo $d->emp->getEmpIdFullName(); ?></td>
       <td><?php echo WebApp::formatDate($d->in_datetime); ?></td>
@@ -65,10 +118,26 @@ function save(){
       <td><?php echo CHtml::dropDownList("ot[$row][sub_code_id]",$d->sub_code_id,$ot_list); ?></td>      
       <td><?php echo $d->reason; ?></td>
       <td><?php echo WebApp::formatDate($d->timestamp); ?></td>
+      <td><a href="<?php echo Yii::app()->createUrl('hrisOtApplication/formyapprovalview',array('id'=>$d->id)); ?>" target="_blank"><i class="icon-eye-open"></i></a></td>
     </tr>
     <?php endforeach; ?>
   </tbody>   
 </table>
+<div class="row-fluid" id="message-success" style="display:none;">
+    <div class="alert alert-success" id="message">
+        
+    </div>    
+</div>
+<div class="row-fluid" id="message-info" style="display:none;">
+    <div class="alert alert-info" id="message">
+        
+    </div>    
+</div>
+<div class="row-fluid" id="message-error" style="display:none;">
+    <div class="alert alert-error" id="message">
+        
+    </div>    
+</div>
 <div class="row-fluid">
   <div class="span4"><button onclick="approve()" id="btnApprove" class="btn btn-success btn-large btn-block">Approve</button></div>
   <div class="span4"><button onclick="deny()" id="btnDeny" class="btn btn-danger btn-large btn-block">Deny</button></div>

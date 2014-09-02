@@ -323,18 +323,16 @@ class HrisOtApplication0 extends BaseHrisOtApplication
 	$diff = WebApp::diffBetweenDateTimeRange($data->in_datetime,$data->out_datetime);
 	$hours = array();
 	$ex = explode(' ',$data->approved_hours);
-	//echo '<pre>';print_r($diff);echo '</pre>';exit();
-	//$minutes['0'] = '0';
-  $minutes = array();
+        $minutes = array();
 	$d = '0';
 	if($ex[2] >= 15) $minutes['15'] = $d = '15';
 	if($ex[2] >= 30) $minutes['30'] = $d = '30';
 	if($ex[2] >= 45) $minutes['45'] = $d = '45';
 	if($diff['hours'] <= 150 ){
-    for($i = 0 ; $i <= $diff['hours']; $i++)$hours[$i] = $i;
-  }
-  for($j = 0 ; $j <= $diff['mins'] ; $j++){ $mincount = $j < 10 ? '0'.$j : $j; $minutes[$mincount] = $mincount; }			
-	echo CHtml::dropDownList("ot[$row][hours]",$diff['hours'],$hours,array('style'=>'width:50px;')).' : '.CHtml::dropDownList("ot[$row][minutes]",$diff['mins'],$minutes,array('style'=>'width:50px;'));
+            for($i = 0 ; $i <= $diff['hours']; $i++)$hours[$i] = $i;
+        }
+        for($j = 0 ; $j <= $diff['mins'] ; $j++){ $mincount = $j < 10 ? '0'.$j : $j; $minutes[$mincount] = $mincount; }			
+              echo CHtml::dropDownList("ot[$row][hours]",$diff['hours'],$hours,array('style'=>'width:50px;')).':'.CHtml::dropDownList("ot[$row][minutes]",$diff['mins'],$minutes,array('style'=>'width:50px;'));
   }
   
   public static function model($className=__CLASS__) {
@@ -360,7 +358,7 @@ class HrisOtApplication0 extends BaseHrisOtApplication
 			'in_datetime' => Yii::t('app', 'Datetime In'),
 			'out_datetime' => Yii::t('app', 'Datetime Out'),
 			'reason' => Yii::t('app', 'Reason'),
-			'approved_hours' => Yii::t('app', 'Hours'),
+			'approved_hours' => Yii::t('app', 'Approved Hours'),
 			'sup_id' => Yii::t('app', 'Supervisor'),
 			'sup_approve' => Yii::t('app', 'Approves'),
 			'sup_approve_datetime' => Yii::t('app', 'Signed'),

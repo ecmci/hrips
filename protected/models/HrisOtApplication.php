@@ -72,5 +72,23 @@
         default: $this->addError('next_lvl_id','Aborted: This OT is already either approved or discarded. Call IT for special cases.'); return false;
       }
     }
+    
+    public function renderApprovedHours($data, $row){
+        $diff = WebApp::diffBetweenDateTimeRange($data->in_datetime,$data->out_datetime);
+        $ex = explode(' ',$data->approved_hours);
+        $hours = array();
+        $minutes = array();
+        $h = empty($ex[0]) ? $diff['hours'] : $ex[0];
+        $m = ( empty($ex[2]) and $ex[2] != '0' ) ? $diff['mins'] : $ex[2];
+        for($i=0;$i<24;$i++){
+            $disp = $i < 10 ? '0'.$i : $i;
+            $hours[$i] = $disp;
+        }
+        for($i=0;$i<60;$i++){
+            $disp = $i < 10 ? '0'.$i : $i;
+            $minutes[$i] = $disp;
+        }
+        echo CHtml::dropDownList("ot[$row][hours]",$h,$hours,array('style'=>'width:50px;')).':'.CHtml::dropDownList("ot[$row][minutes]",$m,$minutes,array('style'=>'width:50px;'));
+    }
  }
 ?>
