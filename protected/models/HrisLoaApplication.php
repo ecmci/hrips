@@ -663,6 +663,8 @@ class HrisLoaApplication extends BaseHrisLoaApplication
 		if($access_lvl_id == HrisAccessLvl::$PAYROLL_MASTER){			
 			$criteria->addCondition("next_lvl_id = '".HrisAccessLvl::$ULTIMATELY_APPROVED."'",'OR');
 		}
+                
+                $criteria->order = "emp_id asc";
 	
 		return new CActiveDataProvider($this, array(
 			'criteria' => $criteria,
@@ -1014,12 +1016,12 @@ class HrisLoaApplication extends BaseHrisLoaApplication
 	}
 	
 	
-	private function logHours2(){
+	private function logHours(){
 		return true;
 	}
 	
 	//override last: 5.24.2013: unknown error not scheduled daw
-	private function logHours(){
+	private function logHours0(){
 		try{
 			$start_datetime = $this->from_datetime;
 			$end_datetime = $this->to_datetime;

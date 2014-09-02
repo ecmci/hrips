@@ -654,3 +654,1057 @@ Stack trace:
 #15 {main}
 REQUEST_URI=/hrips/index.php/hrisLoaApplication/cancel/886
 ---
+2014/09/02 04:52:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /var/www/html/hrips/protected/extensions/giix-components/GxController.php:144
+Stack trace:
+#0 /var/www/html/hrips/protected/controllers/HrisLoaApplication0Controller.php(86): GxController->loadModel('', 'HrisLoaApplicat...')
+#1 [internal function]: HrisLoaApplication0Controller->actionUpdate('')
+#2 /var/www/html/hrips/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(HrisLoaApplicationController), Array)
+#3 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(HrisLoaApplicationController), Object(ReflectionMethod), Array)
+#4 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('update')
+#13 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('HrisLoaApplicat...')
+#14 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /var/www/html/hrips/index.php(14): CApplication->run()
+#16 {main}
+REQUEST_URI=/hrips/index.php/HrisLoaApplication/update/id/
+HTTP_REFERER=https://192.168.1.231/hrips/js/uploadify/uploadify.swf?preventswfcaching=1409604704289
+---
+2014/09/02 04:52:46 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Action not allowed.' in /var/www/html/hrips/protected/controllers/HrisLoaApplication0Controller.php:90
+Stack trace:
+#0 [internal function]: HrisLoaApplication0Controller->actionUpdate('886')
+#1 /var/www/html/hrips/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(HrisLoaApplicationController), Array)
+#2 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(HrisLoaApplicationController), Object(ReflectionMethod), Array)
+#3 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('update')
+#12 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('HrisLoaApplicat...')
+#13 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /var/www/html/hrips/index.php(14): CApplication->run()
+#15 {main}
+REQUEST_URI=/hrips/index.php/HrisLoaApplication/update/id/886
+HTTP_REFERER=https://192.168.1.231/hrips/index.php/hrisLoaApplication/admin
+---
+2014/09/02 05:01:43 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/hrips/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('saveapprovals')
+#8 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('HrisLoaApplicat...')
+#9 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/html/hrips/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/hrips/index.php/HrisLoaApplication/saveapprovals
+---
+2014/09/02 05:01:51 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/hrips/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('saveapprovals')
+#8 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('HrisLoaApplicat...')
+#9 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/html/hrips/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/hrips/index.php/HrisLoaApplication/saveapprovals
+---
+2014/09/02 05:02:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/hrips/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('saveapprovals')
+#8 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('HrisLoaApplicat...')
+#9 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/html/hrips/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/hrips/index.php/HrisLoaApplication/saveapprovals
+---
+2014/09/02 05:02:38 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/hrips/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('saveapprovals')
+#8 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('HrisLoaApplicat...')
+#9 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/html/hrips/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/hrips/index.php/HrisLoaApplication/saveapprovals
+---
+2014/09/02 05:02:40 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/hrips/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('saveapprovals')
+#8 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('HrisLoaApplicat...')
+#9 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/html/hrips/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/hrips/index.php/HrisLoaApplication/saveapprovals
+---
+2014/09/02 05:04:22 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/hrips/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('saveapprovals')
+#8 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('HrisLoaApplicat...')
+#9 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/html/hrips/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/hrips/index.php/HrisLoaApplication/saveapprovals
+---
+2014/09/02 05:07:48 [error] [php] strtolower() expects parameter 1 to be string, array given (/var/www/html/hrips/yii/framework/web/auth/CAccessControlFilter.php:112)
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/CController.php(1144): CAccessControlFilter->setRules()
+#1 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): HrisLoaApplicationController->filterAccessControl()
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#3 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#4 /var/www/html/hrips/yii/framework/web/CController.php(265): HrisLoaApplicationController->runActionWithFilters()
+#5 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): HrisLoaApplicationController->run()
+#6 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#8 /var/www/html/hrips/index.php(14): CWebApplication->run()
+REQUEST_URI=/hrips/index.php/HrisLoaApplication/saveapprovals
+in /var/www/html/hrips/index.php (14)
+2014/09/02 05:08:20 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/hrips/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('saveapprovals')
+#8 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('HrisLoaApplicat...')
+#9 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/html/hrips/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/hrips/index.php/HrisLoaApplication/saveapprovals
+---
+2014/09/02 05:14:08 [error] [exception.CException] exception 'CException' with message 'Property "CHttpRequest.isAjax" is not defined.' in /var/www/html/hrips/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php(17): CComponent->__get('isAjax')
+#1 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisLoaApplicationController->actionSaveapprovals()
+#2 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('saveapprovals')
+#11 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('HrisLoaApplicat...')
+#12 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /var/www/html/hrips/index.php(14): CApplication->run()
+#14 {main}
+REQUEST_URI=/hrips/index.php/HrisLoaApplication/saveapprovals
+---
+2014/09/02 05:16:31 [error] [exception.CHttpException.400] exception 'CHttpException' in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:20
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisLoaApplicationController->actionSaveapprovals()
+#1 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('saveapprovals')
+#10 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('HrisLoaApplicat...')
+#11 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/html/hrips/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/hrips/index.php/HrisLoaApplication/saveapprovals
+---
+2014/09/02 05:16:33 [error] [exception.CHttpException.400] exception 'CHttpException' in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:20
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisLoaApplicationController->actionSaveapprovals()
+#1 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('saveapprovals')
+#10 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('HrisLoaApplicat...')
+#11 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/html/hrips/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/hrips/index.php/HrisLoaApplication/saveapprovals
+---
+2014/09/02 05:16:54 [error] [exception.CHttpException.400] exception 'CHttpException' in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:20
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisLoaApplicationController->actionSaveapprovals()
+#1 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('saveapprovals')
+#10 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('HrisLoaApplicat...')
+#11 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/html/hrips/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/hrips/index.php/HrisLoaApplication/saveapprovals
+---
+2014/09/02 05:17:14 [error] [exception.CHttpException.400] exception 'CHttpException' in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:20
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisLoaApplicationController->actionSaveapprovals()
+#1 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('saveapprovals')
+#10 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('HrisLoaApplicat...')
+#11 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/html/hrips/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/hrips/index.php/HrisLoaApplication/saveapprovals
+---
+2014/09/02 05:17:40 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'This action only accepts ajax requests.' in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:20
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisLoaApplicationController->actionSaveapprovals()
+#1 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('saveapprovals')
+#10 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('HrisLoaApplicat...')
+#11 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/html/hrips/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/hrips/index.php/HrisLoaApplication/saveapprovals
+---
+2014/09/02 05:19:50 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'This action only accepts ajax requests.' in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:20
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisLoaApplicationController->actionSaveapprovals()
+#1 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('saveapprovals')
+#10 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('HrisLoaApplicat...')
+#11 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/html/hrips/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/hrips/index.php/HrisLoaApplication/saveapprovals
+---
+2014/09/02 07:11:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hrisLOaApplication/saveapprovals".' in /var/www/html/hrips/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('hrisLOaApplicat...')
+#1 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/html/hrips/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/hrips/index.php/hrisLOaApplication/saveapprovals
+HTTP_REFERER=https://192.168.1.231/hrips/index.php/hrisLoaApplication/formyapproval
+---
+2014/09/02 07:12:12 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'This action only accepts ajax requests.' in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:20
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisLoaApplicationController->actionSaveapprovals()
+#1 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('saveapprovals')
+#10 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('hrisLoaApplicat...')
+#11 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/html/hrips/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/saveapprovals
+HTTP_REFERER=https://192.168.1.231/hrips/index.php/hrisLoaApplication/formyapproval
+---
+2014/09/02 07:15:28 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'This action only accepts ajax requests.' in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:20
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisLoaApplicationController->actionSaveapprovals()
+#1 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('saveapprovals')
+#10 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('hrisLoaApplicat...')
+#11 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/html/hrips/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/saveapprovals
+HTTP_REFERER=https://192.168.1.231/hrips/index.php/hrisLoaApplication/formyapproval
+---
+2014/09/02 07:23:54 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'This action only accepts ajax requests.' in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:20
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisLoaApplicationController->actionSaveapprovals()
+#1 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('saveapprovals')
+#10 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('hrisLoaApplicat...')
+#11 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/html/hrips/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/saveapprovals
+HTTP_REFERER=https://192.168.1.231/hrips/index.php/hrisLoaApplication/formyapproval
+---
+2014/09/02 07:24:18 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'This action only accepts ajax requests.' in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:20
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisLoaApplicationController->actionSaveapprovals()
+#1 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('saveapprovals')
+#10 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('hrisLoaApplicat...')
+#11 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/html/hrips/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/saveapprovals
+HTTP_REFERER=https://192.168.1.231/hrips/index.php/hrisLoaApplication/formyapproval
+---
+2014/09/02 07:25:45 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'This action only accepts ajax requests.' in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:20
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisLoaApplicationController->actionSaveapprovals()
+#1 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('saveapprovals')
+#10 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('hrisLoaApplicat...')
+#11 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/html/hrips/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/saveapprovals
+HTTP_REFERER=https://192.168.1.231/hrips/index.php/hrisLoaApplication/formyapproval
+---
+2014/09/02 07:26:21 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'This action only accepts ajax requests.' in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:20
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisLoaApplicationController->actionSaveapprovals()
+#1 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('saveapprovals')
+#10 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('hrisLoaApplicat...')
+#11 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/html/hrips/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/saveapprovals
+HTTP_REFERER=https://192.168.1.231/hrips/index.php/hrisLoaApplication/formyapproval
+---
+2014/09/02 07:26:46 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'This action only accepts ajax requestssssss.' in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:20
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisLoaApplicationController->actionSaveapprovals()
+#1 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('saveapprovals')
+#10 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('hrisLoaApplicat...')
+#11 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/html/hrips/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/saveapprovals
+HTTP_REFERER=https://192.168.1.231/hrips/index.php/hrisLoaApplication/formyapproval
+---
+2014/09/02 07:27:55 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'This action only accepts ajax requestssssss.' in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:20
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisLoaApplicationController->actionSaveapprovals()
+#1 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('saveapprovals')
+#10 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('hrisLoaApplicat...')
+#11 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/html/hrips/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/saveapprovals
+HTTP_REFERER=https://192.168.1.231/hrips/index.php/hrisLoaApplication/formyapproval
+---
+2014/09/02 07:30:19 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'This action only accepts ajax requestssssss.' in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:20
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisLoaApplicationController->actionSaveapprovals()
+#1 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('saveapprovals')
+#10 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('hrisLoaApplicat...')
+#11 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/html/hrips/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/saveapprovals
+HTTP_REFERER=https://192.168.1.231/hrips/index.php/hrisLoaApplication/formyapproval
+---
+2014/09/02 07:30:41 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'This action only accepts ajax requestssssss.' in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:20
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisLoaApplicationController->actionSaveapprovals()
+#1 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('saveapprovals')
+#10 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('hrisLoaApplicat...')
+#11 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/html/hrips/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/saveapprovals
+HTTP_REFERER=https://192.168.1.231/hrips/index.php/hrisLoaApplication/formyapproval
+---
+2014/09/02 07:30:53 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'This action only accepts ajax requestssssss.' in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:20
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisLoaApplicationController->actionSaveapprovals()
+#1 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('saveapprovals')
+#10 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('hrisLoaApplicat...')
+#11 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/html/hrips/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/saveapprovals
+HTTP_REFERER=https://192.168.1.231/hrips/index.php/hrisLoaApplication/formyapproval
+---
+2014/09/02 07:34:02 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'This action only accepts ajax requestssssss.' in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:20
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisLoaApplicationController->actionSaveapprovals()
+#1 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('saveapprovals')
+#10 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('hrisLoaApplicat...')
+#11 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/html/hrips/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/saveapprovals
+HTTP_REFERER=https://192.168.1.231/hrips/index.php/hrisLoaApplication/formyapproval
+---
+2014/09/02 07:34:16 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'This action only accepts ajax requestssssss.' in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:20
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisLoaApplicationController->actionSaveapprovals()
+#1 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('saveapprovals')
+#10 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('hrisLoaApplicat...')
+#11 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/html/hrips/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/saveapprovals
+HTTP_REFERER=https://192.168.1.231/hrips/index.php/hrisLoaApplication/formyapproval
+---
+2014/09/02 07:34:27 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'This action only accepts ajax requestssssss.' in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:20
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisLoaApplicationController->actionSaveapprovals()
+#1 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('saveapprovals')
+#10 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('hrisLoaApplicat...')
+#11 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/html/hrips/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/saveapprovals
+HTTP_REFERER=https://192.168.1.231/hrips/index.php/hrisLoaApplication/formyapproval
+---
+2014/09/02 07:34:39 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'This action only accepts ajax requestssssss.' in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:20
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisLoaApplicationController->actionSaveapprovals()
+#1 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('saveapprovals')
+#10 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('hrisLoaApplicat...')
+#11 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/html/hrips/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/saveapprovals
+HTTP_REFERER=https://192.168.1.231/hrips/index.php/hrisLoaApplication/formyapproval
+---
+2014/09/02 07:37:01 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'This action only accepts ajax requestssssss.' in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:20
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisLoaApplicationController->actionSaveapprovals()
+#1 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('saveapprovals')
+#10 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('hrisLoaApplicat...')
+#11 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/html/hrips/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/saveapprovals
+HTTP_REFERER=https://192.168.1.231/hrips/index.php/hrisLoaApplication/formyapproval
+---
+2014/09/02 07:37:40 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'This action only accepts ajax requestssssss.' in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:20
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisLoaApplicationController->actionSaveapprovals()
+#1 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('saveapprovals')
+#10 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('hrisLoaApplicat...')
+#11 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/html/hrips/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/saveapprovals
+HTTP_REFERER=https://192.168.1.231/hrips/index.php/hrisLoaApplication/formyapproval
+---
+2014/09/02 07:45:50 [error] [php] print_r() expects at least 1 parameter, 0 given (/var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:18)
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): HrisLoaApplicationController->runAction()
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/html/hrips/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#4 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): HrisLoaApplicationController->filterAccessControl()
+#5 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#6 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/html/hrips/yii/framework/web/CController.php(265): HrisLoaApplicationController->runActionWithFilters()
+#8 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): HrisLoaApplicationController->run()
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /var/www/html/hrips/index.php(14): CWebApplication->run()
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/saveapprovals
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (18)
+2014/09/02 07:45:58 [error] [php] print_r() expects at least 1 parameter, 0 given (/var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:18)
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): HrisLoaApplicationController->runAction()
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/html/hrips/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#4 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): HrisLoaApplicationController->filterAccessControl()
+#5 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#6 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/html/hrips/yii/framework/web/CController.php(265): HrisLoaApplicationController->runActionWithFilters()
+#8 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): HrisLoaApplicationController->run()
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /var/www/html/hrips/index.php(14): CWebApplication->run()
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/saveapprovals
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (18)
+2014/09/02 07:46:23 [error] [php] print_r() expects at least 1 parameter, 0 given (/var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:18)
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): HrisLoaApplicationController->runAction()
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/html/hrips/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#4 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): HrisLoaApplicationController->filterAccessControl()
+#5 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#6 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/html/hrips/yii/framework/web/CController.php(265): HrisLoaApplicationController->runActionWithFilters()
+#8 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): HrisLoaApplicationController->run()
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /var/www/html/hrips/index.php(14): CWebApplication->run()
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/saveapprovals
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (18)
+2014/09/02 07:46:44 [error] [php] print_r() expects at least 1 parameter, 0 given (/var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:18)
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): HrisLoaApplicationController->runAction()
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/html/hrips/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#4 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): HrisLoaApplicationController->filterAccessControl()
+#5 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#6 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/html/hrips/yii/framework/web/CController.php(265): HrisLoaApplicationController->runActionWithFilters()
+#8 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): HrisLoaApplicationController->run()
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /var/www/html/hrips/index.php(14): CWebApplication->run()
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/saveapprovals
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (18)
+2014/09/02 07:56:43 [error] [php] print_r() expects at least 1 parameter, 0 given (/var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:18)
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): HrisLoaApplicationController->runAction()
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/html/hrips/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#4 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): HrisLoaApplicationController->filterAccessControl()
+#5 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#6 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/html/hrips/yii/framework/web/CController.php(265): HrisLoaApplicationController->runActionWithFilters()
+#8 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): HrisLoaApplicationController->run()
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /var/www/html/hrips/index.php(14): CWebApplication->run()
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/saveapprovals
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (18)
+2014/09/02 07:57:51 [error] [php] print_r() expects at least 1 parameter, 0 given (/var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:18)
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): HrisLoaApplicationController->runAction()
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/html/hrips/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#4 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): HrisLoaApplicationController->filterAccessControl()
+#5 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#6 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/html/hrips/yii/framework/web/CController.php(265): HrisLoaApplicationController->runActionWithFilters()
+#8 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): HrisLoaApplicationController->run()
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /var/www/html/hrips/index.php(14): CWebApplication->run()
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/saveapprovals
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (18)
+2014/09/02 07:58:41 [error] [php] print_r() expects at least 1 parameter, 0 given (/var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:18)
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): HrisLoaApplicationController->runAction()
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/html/hrips/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#4 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): HrisLoaApplicationController->filterAccessControl()
+#5 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#6 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/html/hrips/yii/framework/web/CController.php(265): HrisLoaApplicationController->runActionWithFilters()
+#8 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): HrisLoaApplicationController->run()
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /var/www/html/hrips/index.php(14): CWebApplication->run()
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/saveapprovals
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (18)
+2014/09/02 07:59:30 [error] [php] print_r() expects at least 1 parameter, 0 given (/var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:18)
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): HrisLoaApplicationController->runAction()
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/html/hrips/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#4 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): HrisLoaApplicationController->filterAccessControl()
+#5 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#6 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/html/hrips/yii/framework/web/CController.php(265): HrisLoaApplicationController->runActionWithFilters()
+#8 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): HrisLoaApplicationController->run()
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /var/www/html/hrips/index.php(14): CWebApplication->run()
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/saveapprovals
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (18)
+2014/09/02 08:00:21 [error] [php] print_r() expects at least 1 parameter, 0 given (/var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:18)
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): HrisLoaApplicationController->runAction()
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/html/hrips/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#4 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): HrisLoaApplicationController->filterAccessControl()
+#5 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#6 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/html/hrips/yii/framework/web/CController.php(265): HrisLoaApplicationController->runActionWithFilters()
+#8 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): HrisLoaApplicationController->run()
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /var/www/html/hrips/index.php(14): CWebApplication->run()
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/saveapprovals
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (18)
+2014/09/02 09:46:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "id".' in /var/www/html/hrips/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/CController.php(270): CController->missingAction('id')
+#1 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('id')
+#2 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('hrisLoaApplicat...')
+#3 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/hrips/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/id/695
+HTTP_REFERER=https://192.168.1.231/hrips/index.php/hrisLoaApplication/formyapproval
+---
+2014/09/02 10:34:04 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'This action only accepts ajax requests.' in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:21
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisLoaApplicationController->actionApprove()
+#1 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('approve')
+#10 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('hrisLoaApplicat...')
+#11 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/html/hrips/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/approve
+---
+2014/09/02 10:47:37 [error] [php] Undefined index: TimeIn (/var/www/html/hrips/protected/models/HrisLoaApplication.php:1047)
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisLoaApplicationController->actionApprove()
+#1 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): HrisLoaApplicationController->runAction()
+#3 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/html/hrips/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#5 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): HrisLoaApplicationController->filterAccessControl()
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#7 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/html/hrips/yii/framework/web/CController.php(265): HrisLoaApplicationController->runActionWithFilters()
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): HrisLoaApplicationController->run()
+#10 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/html/hrips/index.php(14): CWebApplication->run()
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/approve
+in /var/www/html/hrips/protected/models/HrisLoaApplication.php (1047)
+2014/09/02 10:47:46 [error] [php] Undefined index: TimeIn (/var/www/html/hrips/protected/models/HrisLoaApplication.php:1047)
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisLoaApplicationController->actionApprove()
+#1 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): HrisLoaApplicationController->runAction()
+#3 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/html/hrips/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#5 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): HrisLoaApplicationController->filterAccessControl()
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#7 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/html/hrips/yii/framework/web/CController.php(265): HrisLoaApplicationController->runActionWithFilters()
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): HrisLoaApplicationController->run()
+#10 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/html/hrips/index.php(14): CWebApplication->run()
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/approve
+in /var/www/html/hrips/protected/models/HrisLoaApplication.php (1047)
+2014/09/02 10:50:00 [error] [php] Undefined index: TimeIn (/var/www/html/hrips/protected/models/HrisLoaApplication.php:1047)
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisLoaApplicationController->actionApprove()
+#1 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): HrisLoaApplicationController->runAction()
+#3 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/html/hrips/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#5 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): HrisLoaApplicationController->filterAccessControl()
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#7 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/html/hrips/yii/framework/web/CController.php(265): HrisLoaApplicationController->runActionWithFilters()
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): HrisLoaApplicationController->run()
+#10 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/html/hrips/index.php(14): CWebApplication->run()
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/approve
+in /var/www/html/hrips/protected/models/HrisLoaApplication.php (1047)
+2014/09/02 10:53:33 [error] [php] Undefined index: TimeIn (/var/www/html/hrips/protected/models/HrisLoaApplication.php:1047)
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisLoaApplicationController->actionApprove()
+#1 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): HrisLoaApplicationController->runAction()
+#3 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/html/hrips/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#5 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): HrisLoaApplicationController->filterAccessControl()
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#7 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/html/hrips/yii/framework/web/CController.php(265): HrisLoaApplicationController->runActionWithFilters()
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): HrisLoaApplicationController->run()
+#10 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/html/hrips/index.php(14): CWebApplication->run()
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/approve
+in /var/www/html/hrips/protected/models/HrisLoaApplication.php (1047)
+2014/09/02 11:01:03 [error] [php] Undefined index: TimeOut (/var/www/html/hrips/protected/models/HrisLoaApplication.php:1047)
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisLoaApplicationController->actionApprove()
+#1 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): HrisLoaApplicationController->runAction()
+#3 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/html/hrips/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#5 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): HrisLoaApplicationController->filterAccessControl()
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#7 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/html/hrips/yii/framework/web/CController.php(265): HrisLoaApplicationController->runActionWithFilters()
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): HrisLoaApplicationController->run()
+#10 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/html/hrips/index.php(14): CWebApplication->run()
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/approve
+in /var/www/html/hrips/protected/models/HrisLoaApplication.php (1047)
+2014/09/02 11:01:14 [error] [php] Undefined index: TimeIn (/var/www/html/hrips/protected/models/HrisLoaApplication.php:1047)
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisLoaApplicationController->actionApprove()
+#1 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): HrisLoaApplicationController->runAction()
+#3 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/html/hrips/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#5 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): HrisLoaApplicationController->filterAccessControl()
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#7 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/html/hrips/yii/framework/web/CController.php(265): HrisLoaApplicationController->runActionWithFilters()
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): HrisLoaApplicationController->run()
+#10 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/html/hrips/index.php(14): CWebApplication->run()
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/approve
+in /var/www/html/hrips/protected/models/HrisLoaApplication.php (1047)
+2014/09/02 11:07:58 [warning] [application] Failed to set unsafe attribute "dept_id" of "HrisLoaApplicationReport".
+in /var/www/html/hrips/protected/controllers/admin/HrisLoaApplicationReportController.php (137)
+2014/09/02 11:10:55 [warning] [application] Failed to set unsafe attribute "dept_id" of "HrisLoaApplicationReport".
+in /var/www/html/hrips/protected/controllers/admin/HrisLoaApplicationReportController.php (137)
+2014/09/02 11:10:58 [warning] [application] Failed to set unsafe attribute "dept_id" of "HrisLoaApplicationReport".
+in /var/www/html/hrips/protected/controllers/admin/HrisLoaApplicationReportController.php (137)
+2014/09/02 11:10:58 [warning] [application] Failed to set unsafe attribute "dept_id" of "HrisLoaApplicationReport".
+in /var/www/html/hrips/protected/controllers/admin/HrisLoaApplicationReportController.php (137)
+2014/09/02 11:10:58 [warning] [application] Failed to set unsafe attribute "dept_id" of "HrisLoaApplicationReport".
+in /var/www/html/hrips/protected/controllers/admin/HrisLoaApplicationReportController.php (137)
+2014/09/02 11:10:58 [warning] [application] Failed to set unsafe attribute "dept_id" of "HrisLoaApplicationReport".
+in /var/www/html/hrips/protected/controllers/admin/HrisLoaApplicationReportController.php (137)
+2014/09/02 11:10:59 [warning] [application] Failed to set unsafe attribute "dept_id" of "HrisLoaApplicationReport".
+in /var/www/html/hrips/protected/controllers/admin/HrisLoaApplicationReportController.php (137)
+2014/09/02 11:10:59 [warning] [application] Failed to set unsafe attribute "dept_id" of "HrisLoaApplicationReport".
+in /var/www/html/hrips/protected/controllers/admin/HrisLoaApplicationReportController.php (137)
+2014/09/02 11:11:00 [warning] [application] Failed to set unsafe attribute "dept_id" of "HrisLoaApplicationReport".
+in /var/www/html/hrips/protected/controllers/admin/HrisLoaApplicationReportController.php (137)
+2014/09/02 11:11:00 [warning] [application] Failed to set unsafe attribute "dept_id" of "HrisLoaApplicationReport".
+in /var/www/html/hrips/protected/controllers/admin/HrisLoaApplicationReportController.php (137)
+2014/09/02 11:11:00 [warning] [application] Failed to set unsafe attribute "dept_id" of "HrisLoaApplicationReport".
+in /var/www/html/hrips/protected/controllers/admin/HrisLoaApplicationReportController.php (137)
+2014/09/02 11:11:01 [warning] [application] Failed to set unsafe attribute "dept_id" of "HrisLoaApplicationReport".
+in /var/www/html/hrips/protected/controllers/admin/HrisLoaApplicationReportController.php (137)
+2014/09/02 11:11:01 [warning] [application] Failed to set unsafe attribute "dept_id" of "HrisLoaApplicationReport".
+in /var/www/html/hrips/protected/controllers/admin/HrisLoaApplicationReportController.php (137)
+2014/09/02 11:11:01 [warning] [application] Failed to set unsafe attribute "dept_id" of "HrisLoaApplicationReport".
+in /var/www/html/hrips/protected/controllers/admin/HrisLoaApplicationReportController.php (137)
+2014/09/02 11:11:01 [warning] [application] Failed to set unsafe attribute "dept_id" of "HrisLoaApplicationReport".
+in /var/www/html/hrips/protected/controllers/admin/HrisLoaApplicationReportController.php (137)
+2014/09/02 11:11:02 [warning] [application] Failed to set unsafe attribute "dept_id" of "HrisLoaApplicationReport".
+in /var/www/html/hrips/protected/controllers/admin/HrisLoaApplicationReportController.php (137)
+2014/09/02 11:11:02 [warning] [application] Failed to set unsafe attribute "dept_id" of "HrisLoaApplicationReport".
+in /var/www/html/hrips/protected/controllers/admin/HrisLoaApplicationReportController.php (137)
+2014/09/02 11:11:17 [warning] [application] Failed to set unsafe attribute "dept_id" of "HrisLoaApplicationReport".
+in /var/www/html/hrips/protected/controllers/admin/HrisLoaApplicationReportController.php (137)
+2014/09/02 11:11:19 [warning] [application] Failed to set unsafe attribute "dept_id" of "HrisLoaApplicationReport".
+in /var/www/html/hrips/protected/controllers/admin/HrisLoaApplicationReportController.php (137)
+2014/09/02 11:11:19 [warning] [application] Failed to set unsafe attribute "dept_id" of "HrisLoaApplicationReport".
+in /var/www/html/hrips/protected/controllers/admin/HrisLoaApplicationReportController.php (137)
+2014/09/02 11:11:19 [warning] [application] Failed to set unsafe attribute "dept_id" of "HrisLoaApplicationReport".
+in /var/www/html/hrips/protected/controllers/admin/HrisLoaApplicationReportController.php (137)
+2014/09/02 11:11:19 [warning] [application] Failed to set unsafe attribute "dept_id" of "HrisLoaApplicationReport".
+in /var/www/html/hrips/protected/controllers/admin/HrisLoaApplicationReportController.php (137)
+2014/09/02 11:11:20 [warning] [application] Failed to set unsafe attribute "dept_id" of "HrisLoaApplicationReport".
+in /var/www/html/hrips/protected/controllers/admin/HrisLoaApplicationReportController.php (137)
+2014/09/02 11:11:20 [warning] [application] Failed to set unsafe attribute "dept_id" of "HrisLoaApplicationReport".
+in /var/www/html/hrips/protected/controllers/admin/HrisLoaApplicationReportController.php (137)
+2014/09/02 11:11:20 [warning] [application] Failed to set unsafe attribute "dept_id" of "HrisLoaApplicationReport".
+in /var/www/html/hrips/protected/controllers/admin/HrisLoaApplicationReportController.php (137)
+2014/09/02 11:12:22 [warning] [application] Failed to set unsafe attribute "dept_id" of "HrisLoaApplicationReport".
+in /var/www/html/hrips/protected/controllers/admin/HrisLoaApplicationReportController.php (137)
+2014/09/02 11:15:31 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/hrips/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('deny')
+#8 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('hrisLoaApplicat...')
+#9 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/html/hrips/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/deny
+---
+2014/09/02 11:16:23 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'This action only accepts ajax requests.' in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:34
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisLoaApplicationController->actionDeny()
+#1 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('deny')
+#10 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('hrisLoaApplicat...')
+#11 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/html/hrips/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/deny
+---
+2014/09/02 11:23:39 [error] [php] Undefined index: r (/var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:27)
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): HrisLoaApplicationController->runAction()
+#1 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/html/hrips/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): HrisLoaApplicationController->filterAccessControl()
+#4 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/hrips/yii/framework/web/CController.php(265): HrisLoaApplicationController->runActionWithFilters()
+#7 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): HrisLoaApplicationController->run()
+#8 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/html/hrips/index.php(14): CWebApplication->run()
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/deny
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (27)
+2014/09/02 11:30:46 [warning] [application] Failed to set unsafe attribute "dept_id" of "HrisLoaApplicationReport".
+in /var/www/html/hrips/protected/controllers/admin/HrisLoaApplicationReportController.php (137)
+2014/09/02 11:35:16 [warning] [application] Failed to set unsafe attribute "dept_id" of "HrisLoaApplicationReport".
+in /var/www/html/hrips/protected/controllers/admin/HrisLoaApplicationReportController.php (137)
+2014/09/02 11:37:16 [warning] [application] Failed to set unsafe attribute "dept_id" of "HrisLoaApplicationReport".
+in /var/www/html/hrips/protected/controllers/admin/HrisLoaApplicationReportController.php (137)
+2014/09/02 11:41:29 [error] [php] Undefined index: loa (/var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:76)
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): HrisLoaApplicationController->runAction()
+#1 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/html/hrips/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): HrisLoaApplicationController->filterAccessControl()
+#4 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/hrips/yii/framework/web/CController.php(265): HrisLoaApplicationController->runActionWithFilters()
+#7 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): HrisLoaApplicationController->run()
+#8 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/html/hrips/index.php(14): CWebApplication->run()
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/saveapprovals
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (76)
+2014/09/02 11:41:39 [error] [php] Undefined index: loa (/var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:24)
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): HrisLoaApplicationController->runAction()
+#1 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/html/hrips/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): HrisLoaApplicationController->filterAccessControl()
+#4 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/hrips/yii/framework/web/CController.php(265): HrisLoaApplicationController->runActionWithFilters()
+#7 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): HrisLoaApplicationController->run()
+#8 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/html/hrips/index.php(14): CWebApplication->run()
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/deny
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (24)
+2014/09/02 11:42:43 [error] [php] Undefined index: loa (/var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php:24)
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): HrisLoaApplicationController->runAction()
+#1 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/html/hrips/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): HrisLoaApplicationController->filterAccessControl()
+#4 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/hrips/yii/framework/web/CController.php(265): HrisLoaApplicationController->runActionWithFilters()
+#7 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): HrisLoaApplicationController->run()
+#8 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/html/hrips/index.php(14): CWebApplication->run()
+REQUEST_URI=/hrips/index.php/hrisLoaApplication/deny
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (24)

@@ -6186,3 +6186,133 @@ in /var/www/html/hrips/protected/controllers/SiteController.php (159)
 in /var/www/html/hrips/protected/components/UserIdentity.php (45)
 2014/09/01 15:55:08 [info] [app] Visitor from IP 192.168.1.48
 in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/09/02 04:40:56 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/09/02 04:41:13 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/09/02 04:43:11 [info] [app] Login successful for user 1078 IP: 192.168.1.48
+in /var/www/html/hrips/protected/components/UserIdentity.php (45)
+2014/09/02 04:44:09 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/09/02 04:44:10 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/09/02 04:44:11 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/09/02 06:54:04 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/09/02 06:54:10 [info] [app] Login successful for user 1078 IP: 192.168.1.48
+in /var/www/html/hrips/protected/components/UserIdentity.php (45)
+2014/09/02 07:50:43 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/09/02 07:50:44 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/09/02 09:13:28 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/09/02 09:13:35 [info] [app] Login successful for user 1078 IP: 192.168.1.48
+in /var/www/html/hrips/protected/components/UserIdentity.php (45)
+2014/09/02 10:02:38 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/09/02 10:04:52 [info] [app] Login failed for user 1078 IP: 192.168.1.48
+in /var/www/html/hrips/protected/components/UserIdentity.php (42)
+2014/09/02 10:04:52 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/09/02 10:04:58 [info] [app] Login successful for user 1078 IP: 192.168.1.48
+in /var/www/html/hrips/protected/components/UserIdentity.php (45)
+2014/09/02 10:15:29 [info] [app] Edited by Steven Ly last 09/02/2014 10:15 AM
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (23)
+2014/09/02 10:19:29 [info] [app] LOA 695 Edited by Steven Ly last 09/02/2014 10:19 AM
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (23)
+2014/09/02 10:20:00 [info] [app] LOA 695 Edited by Steven Ly
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (23)
+2014/09/02 10:42:22 [info] [app] LOA 695 Edited by Steven Ly
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (50)
+2014/09/02 10:42:34 [info] [app] LOA 909 Edited by Steven Ly
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (50)
+2014/09/02 10:44:16 [info] [app] start_datetime = 2014-07-14 22:00:00 | end_datetime = 2014-07-15 07:00:00
+in /var/www/html/hrips/protected/models/HrisLoaApplication.php (1029)
+2014/09/02 10:44:16 [info] [app] LOA ID 909 has been entered into Employee Hours by 1078 for job code 2007
+in /var/www/html/hrips/protected/models/HrisLoaApplication.php (1150)
+2014/09/02 10:45:47 [info] [app] start_datetime = 2014-07-08 23:00:00 | end_datetime = 2014-07-09 08:00:00
+in /var/www/html/hrips/protected/models/HrisLoaApplication.php (1029)
+2014/09/02 10:45:47 [info] [app] LOA ID 910 has been entered into Employee Hours by 1078 for job code 2006
+in /var/www/html/hrips/protected/models/HrisLoaApplication.php (1150)
+2014/09/02 10:47:37 [info] [app] start_datetime = 2014-07-07 11:00:00 | end_datetime = 2014-07-08 08:00:00
+in /var/www/html/hrips/protected/models/HrisLoaApplication.php (1029)
+2014/09/02 10:47:37 [info] [app] NormalizedStart was null for LOA ID 911
+in /var/www/html/hrips/protected/models/HrisLoaApplication.php (1043)
+2014/09/02 10:47:46 [info] [app] start_datetime = 2014-07-07 11:00:00 | end_datetime = 2014-07-08 08:00:00
+in /var/www/html/hrips/protected/models/HrisLoaApplication.php (1029)
+2014/09/02 10:47:46 [info] [app] NormalizedStart was null for LOA ID 911
+in /var/www/html/hrips/protected/models/HrisLoaApplication.php (1043)
+2014/09/02 10:50:00 [info] [app] start_datetime = 2014-07-25 22:00:00 | end_datetime = 2014-07-26 08:00:00
+in /var/www/html/hrips/protected/models/HrisLoaApplication.php (1029)
+2014/09/02 10:50:00 [info] [app] NormalizedStart was null for LOA ID 908
+in /var/www/html/hrips/protected/models/HrisLoaApplication.php (1043)
+2014/09/02 10:53:33 [info] [app] start_datetime = 2014-07-25 22:00:00 | end_datetime = 2014-07-26 08:00:00
+in /var/www/html/hrips/protected/models/HrisLoaApplication.php (1029)
+2014/09/02 10:53:33 [info] [app] NormalizedStart was null for LOA ID 908
+in /var/www/html/hrips/protected/models/HrisLoaApplication.php (1043)
+2014/09/02 10:53:55 [info] [app] start_datetime = 2014-07-14 23:00:00 | end_datetime = 2014-07-15 08:00:00
+in /var/www/html/hrips/protected/models/HrisLoaApplication.php (1029)
+2014/09/02 10:53:55 [info] [app] LOA ID 695 has been entered into Employee Hours by 1078 for job code 2006
+in /var/www/html/hrips/protected/models/HrisLoaApplication.php (1150)
+2014/09/02 10:57:33 [info] [app] start_datetime = 2014-08-22 04:00:00 | end_datetime = 2014-08-22 01:00:00
+in /var/www/html/hrips/protected/models/HrisLoaApplication.php (1029)
+2014/09/02 10:57:33 [info] [app] LOA ID 912 has been entered into Employee Hours by 1078 for job code 2003
+in /var/www/html/hrips/protected/models/HrisLoaApplication.php (1150)
+2014/09/02 10:58:09 [info] [app] start_datetime = 2014-07-17 00:00:00 | end_datetime = 2014-07-19 00:00:00
+in /var/www/html/hrips/protected/models/HrisLoaApplication.php (1029)
+2014/09/02 10:58:10 [info] [app] LOA ID 913 has been entered into Employee Hours by 1078 for job code 2008
+in /var/www/html/hrips/protected/models/HrisLoaApplication.php (1150)
+2014/09/02 10:59:55 [info] [app] start_datetime = 2014-07-11 00:00:00 | end_datetime = 2014-07-11 04:00:00
+in /var/www/html/hrips/protected/models/HrisLoaApplication.php (1029)
+2014/09/02 10:59:55 [info] [app] LOA ID 914 has been entered into Employee Hours by 1078 for job code 2002
+in /var/www/html/hrips/protected/models/HrisLoaApplication.php (1150)
+2014/09/02 11:01:03 [info] [app] start_datetime = 2014-07-16 09:00:00 | end_datetime = 2014-07-16 01:00:00
+in /var/www/html/hrips/protected/models/HrisLoaApplication.php (1029)
+2014/09/02 11:01:03 [info] [app] NormalizedEnd was null for LOA ID 915
+in /var/www/html/hrips/protected/models/HrisLoaApplication.php (1043)
+2014/09/02 11:01:14 [info] [app] start_datetime = 2014-07-25 22:00:00 | end_datetime = 2014-07-26 08:00:00
+in /var/www/html/hrips/protected/models/HrisLoaApplication.php (1029)
+2014/09/02 11:01:14 [info] [app] NormalizedStart was null for LOA ID 908
+in /var/www/html/hrips/protected/models/HrisLoaApplication.php (1043)
+2014/09/02 11:10:48 [info] [app] LOA 958 Edited by Steven Ly
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (50)
+2014/09/02 11:10:48 [info] [app] LOA 978 Edited by Steven Ly
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (50)
+2014/09/02 11:10:48 [info] [app] LOA 992 Edited by Steven Ly
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (50)
+2014/09/02 11:10:48 [info] [app] LOA 993 Edited by Steven Ly
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (50)
+2014/09/02 11:39:18 [info] [app] LOA 998 Edited by Steven Ly
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (80)
+2014/09/02 11:39:18 [info] [app] LOA 954 Edited by Steven Ly
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (80)
+2014/09/02 11:39:18 [info] [app] LOA 999 Edited by Steven Ly
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (80)
+2014/09/02 11:39:18 [info] [app] LOA 935 Edited by Steven Ly
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (80)
+2014/09/02 11:39:18 [info] [app] LOA 936 Edited by Steven Ly
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (80)
+2014/09/02 11:39:18 [info] [app] LOA 937 Edited by Steven Ly
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (80)
+2014/09/02 11:39:18 [info] [app] LOA 944 Edited by Steven Ly
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (80)
+2014/09/02 11:39:18 [info] [app] LOA 941 Edited by Steven Ly
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (80)
+2014/09/02 11:39:18 [info] [app] LOA 942 Edited by Steven Ly
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (80)
+2014/09/02 11:39:18 [info] [app] LOA 929 Edited by Steven Ly
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (80)
+2014/09/02 11:41:07 [info] [app] LOA 945 Edited by Steven Ly
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (80)
+2014/09/02 11:41:07 [info] [app] LOA 946 Edited by Steven Ly
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (80)
+2014/09/02 11:41:07 [info] [app] LOA 962 Edited by Steven Ly
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (80)
+2014/09/02 11:41:07 [info] [app] LOA 976 Edited by Steven Ly
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (80)
+2014/09/02 11:41:07 [info] [app] LOA 951 Edited by Steven Ly
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (80)
+2014/09/02 11:41:07 [info] [app] LOA 957 Edited by Steven Ly
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (80)

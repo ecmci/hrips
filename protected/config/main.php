@@ -118,12 +118,12 @@ return array(
 					'logFile'=>'admin_log.txt',
 				),
 				// uncomment the following to show log messages on web pages
-				
+				/*
 				array(
 					'class'=>'CWebLogRoute',
 					'levels'=>'error, warning, info, notice, trace',
 				),
-				
+				*/
 			),
 		),
 	),

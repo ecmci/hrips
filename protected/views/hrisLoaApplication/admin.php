@@ -65,104 +65,40 @@ function cancelLOA(id){
 	'selectableRows'=>'10',	
 	'filter' => $model,
 	'columns' => array(
-		/*array(
-			'name'=>'',
-			'type'=>'raw',
-			'htmlOptions'=>array('width'=>5),
-			'value'=>'',
-		),*/
-		/* array(
-      	'class'=>'CCheckBoxColumn',   
-      	'checkBoxHtmlOptions'=>array('name'=>'id[]'),   	
-      ),*/
-
-            array(
-                'header'=>'Actions',
-                'value'=>'$data->renderActionsColumn()',
-            ),
-            'id',
-                
-		/*array(
-				'name'=>'emp_id',
-				'value'=>'$data->emp->getEmpIdFullName()',
-				'filter'=>GxHtml::listDataEx(Employee::model()->findAll(),'Emp_ID','EmpIdFullName'),
-				),*/
+                array(
+                    'header'=>'Actions',
+                    'value'=>'$data->renderActionsColumn()',
+                ),
+                'id',                
 		array(
-				'name'=>'emp_id',
-				'header'=>'Status',
-				'value'=>'$data->getCurrentStatus()',
-				'filter'=>false,
+                    'name'=>'emp_id',
+                    'header'=>'Status',
+                    'value'=>'$data->getCurrentStatus()',
+                    'filter'=>false,
 		),
 		array(
-				'name'=>'job_code_id',
-				'value'=>'GxHtml::valueEx($data->jobCode)',
-				'filter'=>GxHtml::listDataEx(JobCode::model()->findAll(array('condition'=>"title like '%LOA%'"))),
-				),
+                    'name'=>'job_code_id',
+                    'value'=>'GxHtml::valueEx($data->jobCode)',
+                    'filter'=>GxHtml::listDataEx(JobCode::model()->findAll(array('condition'=>"title like '%LOA%'"))),
+                ),
 		array(
-			'name'=>'from_datetime',
-			'value'=>'WebApp::formatDate($data->from_datetime)',
+                    'name'=>'from_datetime',
+                    'value'=>'WebApp::formatDate($data->from_datetime)',
 		),
 		array(
-			'name'=>'to_datetime',
-			'value'=>'WebApp::formatDate($data->to_datetime)',
+                    'name'=>'to_datetime',
+                    'value'=>'WebApp::formatDate($data->to_datetime)',
 		),
-    array(
-			'name'=>'hours_requested',
-			'value'=>'$data->hours_requested',
-      'filter'=>false,
+                array(
+                    'name'=>'hours_requested',
+                    'value'=>'$data->hours_requested',
+                    'filter'=>false,
 		),
-//     array(
-// 			'name'=>'hours_approved',
-// 			'value'=>'$data->hours_approved',
-//       'filter'=>false,
-// 		),
 		'reason',
 		array(
-			'name'=>'timestamp',
-			'value'=>'WebApp::formatDate($data->timestamp)',
-		),		
-		/*
-		'remarks',
-		array(
-				'name'=>'reliever_id',
-				'value'=>'GxHtml::valueEx($data->reliever)',
-				'filter'=>GxHtml::listDataEx(Employee::model()->findAllAttributes(null, true)),
-				),
-		array(
-					'name' => 'reliever_approve',
-					'value' => '($data->reliever_approve === 0) ? Yii::t(\'app\', \'No\') : Yii::t(\'app\', \'Yes\')',
-					'filter' => array('0' => Yii::t('app', 'No'), '1' => Yii::t('app', 'Yes')),
-					),
-		'reliever_approve_datetime',
-		array(
-				'name'=>'sup_id',
-				'value'=>'GxHtml::valueEx($data->sup)',
-				'filter'=>GxHtml::listDataEx(Employee::model()->findAllAttributes(null, true)),
-				),
-		array(
-					'name' => 'sup_approve',
-					'value' => '($data->sup_approve === 0) ? Yii::t(\'app\', \'No\') : Yii::t(\'app\', \'Yes\')',
-					'filter' => array('0' => Yii::t('app', 'No'), '1' => Yii::t('app', 'Yes')),
-					),
-		'sup_approve_datetime',
-		'sup_disapprove_reason',
-		array(
-				'name'=>'hr_id',
-				'value'=>'GxHtml::valueEx($data->hr)',
-				'filter'=>GxHtml::listDataEx(Employee::model()->findAllAttributes(null, true)),
-				),
-		array(
-					'name' => 'hr_approve',
-					'value' => '($data->hr_approve === 0) ? Yii::t(\'app\', \'No\') : Yii::t(\'app\', \'Yes\')',
-					'filter' => array('0' => Yii::t('app', 'No'), '1' => Yii::t('app', 'Yes')),
-					),
-		'hr_approve_datetime',
-		'hr_disapprove_reason',
-		
-		array(
-			'class' => 'CButtonColumn',
-		),
-		*/
+                    'name'=>'timestamp',
+                    'value'=>'WebApp::formatDate($data->timestamp)',
+            ),		
 	),
 )); 
 
