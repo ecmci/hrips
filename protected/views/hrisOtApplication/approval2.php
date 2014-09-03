@@ -25,11 +25,21 @@ var url = '';
 var btnSave = $('#btnSave');
 var btnDeny = $('#btnDeny');
 var btnApprove = $('#btnApprove');
+var isDeny = false;
 function approve(){
-    alert('To implement approve');
+    if(confirm('This action will approve the selected records. Are you sure you want to proceed?')){  
+        url = '".Yii::app()->createUrl('hrisOtApplication/approve')."';
+        btnApprove.html('Approving... Please wait.');
+        submit();
+    }
 }
 function deny(){
-    alert('To implement deny');
+    if(confirm('This action will deny the selected records. Are you sure you want to proceed?')){
+        $('#r').val(prompt('State the reason for denying'));
+        url = '".Yii::app()->createUrl('hrisOtApplication/deny')."';
+        btnDeny.html('Denying... Please wait.');
+        submit();
+    }
 }
 function save(){
     url = '".Yii::app()->createUrl('hrisOtApplication/save')."'; 
@@ -43,6 +53,7 @@ function submit()
     btnApprove.attr('disabled','disabled');
     
     var data = DT.$('input,select').serialize();
+    data = data + '&r=' + $('#r').val();
     $.ajax({
         url : url,
         type : 'POST',
@@ -50,7 +61,7 @@ function submit()
         success : function(data,textStatus,jqXHR){
             $('#message-success #message').html('<h5>Success</h5><p>'+data+'</p>');
             $('#message-success').slideDown(function(){
-                $(this).delay(5000).slideUp();
+                $(this).delay(5000).slideUp(function(){ location.reload(); });
             });
         },
         error : function(jqXHR,textStatus,errorThrown){
@@ -100,6 +111,19 @@ function bindCheckboxEditEvt()
       <th>Submitted</th>
       <th></th>
     </tr>
+    <tr>
+      <td><input name="r" id="r" type="hidden"/></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
   </thead>
   <tbody>
     <?php foreach($data->getData() as $row=>$d): ?>
@@ -108,6 +132,7 @@ function bindCheckboxEditEvt()
           <input type="checkbox" name="row[]" class="checkbox-edit" value="<?php echo $row;?>">
           <input type="hidden" name="ot[<?php echo $row;?>][edit]" class="" value="0" id="row<?php echo $row;?>">
           <input type="hidden" name="ot[<?php echo $row;?>][id]" class="" value="<?php echo $d->id;?>">
+          
       </td>
       <td><?php echo $d->id; ?></td>
       <td><?php echo $d->emp->getEmpIdFullName(); ?></td>
@@ -120,7 +145,7 @@ function bindCheckboxEditEvt()
       <td><?php echo WebApp::formatDate($d->timestamp); ?></td>
       <td><a href="<?php echo Yii::app()->createUrl('hrisOtApplication/formyapprovalview',array('id'=>$d->id)); ?>" target="_blank"><i class="icon-eye-open"></i></a></td>
     </tr>
-    <?php endforeach; ?>
+    <?php endforeach; ?>    
   </tbody>   
 </table>
 <div class="row-fluid" id="message-success" style="display:none;">

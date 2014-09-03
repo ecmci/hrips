@@ -1821,3 +1821,236 @@ Stack trace:
 #16 /var/www/html/hrips/index.php(14): CWebApplication->run()
 REQUEST_URI=/hrips/index.php/hrisOtApplication/formyapproval
 in /var/www/html/hrips/protected/models/HrisOtApplication.php (88)
+2014/09/03 09:43:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "deny".' in /var/www/html/hrips/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/CController.php(270): CController->missingAction('deny')
+#1 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('deny')
+#2 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('hrisOtApplicati...')
+#3 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/hrips/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/hrips/index.php/hrisOtApplication/deny
+HTTP_REFERER=https://192.168.1.231/hrips/index.php/hrisOtApplication/formyapproval
+---
+2014/09/03 09:46:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "deny".' in /var/www/html/hrips/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/CController.php(270): CController->missingAction('deny')
+#1 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('deny')
+#2 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('hrisOtApplicati...')
+#3 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/hrips/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/hrips/index.php/hrisOtApplication/deny
+HTTP_REFERER=https://192.168.1.231/hrips/index.php/hrisOtApplication/formyapproval
+---
+2014/09/03 09:46:39 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/hrips/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('deny')
+#8 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('hrisOtApplicati...')
+#9 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/html/hrips/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/hrips/index.php/hrisOtApplication/deny
+HTTP_REFERER=https://192.168.1.231/hrips/index.php/hrisOtApplication/formyapproval
+---
+2014/09/03 09:46:47 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/hrips/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('deny')
+#8 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('hrisOtApplicati...')
+#9 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/html/hrips/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/hrips/index.php/hrisOtApplication/deny
+HTTP_REFERER=https://192.168.1.231/hrips/index.php/hrisOtApplication/formyapproval
+---
+2014/09/03 09:46:55 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/hrips/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('deny')
+#8 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('hrisOtApplicati...')
+#9 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/html/hrips/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/hrips/index.php/hrisOtApplication/deny
+HTTP_REFERER=https://192.168.1.231/hrips/index.php/hrisOtApplication/formyapproval
+---
+2014/09/03 09:47:56 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/hrips/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('deny')
+#8 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('hrisOtApplicati...')
+#9 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/html/hrips/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/hrips/index.php/hrisOtApplication/deny
+HTTP_REFERER=https://192.168.1.231/hrips/index.php/hrisOtApplication/formyapproval
+---
+2014/09/03 09:48:03 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/hrips/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('deny')
+#8 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('hrisOtApplicati...')
+#9 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/html/hrips/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/hrips/index.php/hrisOtApplication/deny
+HTTP_REFERER=https://192.168.1.231/hrips/index.php/hrisOtApplication/formyapproval
+---
+2014/09/03 09:49:44 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'This action only accepts ajax request.' in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php:22
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisOtApplicationController->actionDeny()
+#1 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('deny')
+#10 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('hrisOtApplicati...')
+#11 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/html/hrips/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/hrips/index.php/hrisOtApplication/deny
+HTTP_REFERER=https://192.168.1.231/hrips/index.php/hrisOtApplication/formyapproval
+---
+2014/09/03 09:49:51 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'This action only accepts ajax request.' in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php:22
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisOtApplicationController->actionDeny()
+#1 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('deny')
+#10 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('hrisOtApplicati...')
+#11 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/html/hrips/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/hrips/index.php/hrisOtApplication/deny
+HTTP_REFERER=https://192.168.1.231/hrips/index.php/hrisOtApplication/formyapproval
+---
+2014/09/03 09:50:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "deny".' in /var/www/html/hrips/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/CController.php(270): CController->missingAction('deny')
+#1 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('deny')
+#2 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('hrisOtApplicati...')
+#3 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/hrips/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/hrips/index.php/hrisOtApplication/deny
+HTTP_REFERER=https://192.168.1.231/hrips/index.php/hrisOtApplication/formyapproval
+---
+2014/09/03 09:52:08 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'This action only accepts ajax request.' in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php:22
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/actions/CInlineAction.php(49): HrisOtApplicationController->actionApprove()
+#1 /var/www/html/hrips/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('approve')
+#10 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('hrisOtApplicati...')
+#11 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/html/hrips/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/hrips/index.php/hrisOtApplication/approve
+HTTP_REFERER=https://192.168.1.231/hrips/index.php/hrisOtApplication/formyapproval
+---
+2014/09/03 10:16:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "deny".' in /var/www/html/hrips/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/CController.php(270): CController->missingAction('deny')
+#1 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('deny')
+#2 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('hrisOtApplicati...')
+#3 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/hrips/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/hrips/index.php/hrisOtApplication/deny
+HTTP_REFERER=https://192.168.1.231/hrips/index.php/hrisOtApplication/formyapproval
+---
+2014/09/03 10:17:51 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/hrips/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/hrips/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/hrips/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): CController->run('deny')
+#8 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('hrisOtApplicati...')
+#9 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/html/hrips/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/hrips/index.php/hrisOtApplication/deny
+HTTP_REFERER=https://192.168.1.231/hrips/index.php/hrisOtApplication/formyapproval
+---
+2014/09/03 10:19:56 [error] [php] Undefined index: r (/var/www/html/hrips/protected/controllers/HrisOtApplicationController.php:29)
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): HrisOtApplicationController->runAction()
+#1 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/html/hrips/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): HrisOtApplicationController->filterAccessControl()
+#4 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/hrips/yii/framework/web/CController.php(265): HrisOtApplicationController->runActionWithFilters()
+#7 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): HrisOtApplicationController->run()
+#8 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/html/hrips/index.php(14): CWebApplication->run()
+REQUEST_URI=/hrips/index.php/hrisOtApplication/deny
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (29)
+2014/09/03 10:20:03 [error] [php] Undefined index: r (/var/www/html/hrips/protected/controllers/HrisOtApplicationController.php:29)
+Stack trace:
+#0 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(133): HrisOtApplicationController->runAction()
+#1 /var/www/html/hrips/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/html/hrips/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/html/hrips/yii/framework/web/filters/CInlineFilter.php(58): HrisOtApplicationController->filterAccessControl()
+#4 /var/www/html/hrips/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/html/hrips/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/hrips/yii/framework/web/CController.php(265): HrisOtApplicationController->runActionWithFilters()
+#7 /var/www/html/hrips/yii/framework/web/CWebApplication.php(282): HrisOtApplicationController->run()
+#8 /var/www/html/hrips/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/hrips/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/html/hrips/index.php(14): CWebApplication->run()
+REQUEST_URI=/hrips/index.php/hrisOtApplication/deny
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (29)

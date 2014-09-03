@@ -6430,3 +6430,83 @@ in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (31
 in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (31)
 2014/09/03 07:49:31 [info] [app] OT ID 1562 edited by Steven Ly data[{"edit":"1","id":"1562","hours":"4","minutes":"9","sub_code_id":"2001-13"}]
 in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (31)
+2014/09/03 09:33:28 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/09/03 09:33:36 [info] [app] Login successful for user 1078 IP: 192.168.1.48
+in /var/www/html/hrips/protected/components/UserIdentity.php (45)
+2014/09/03 09:35:42 [info] [app] OT ID 1552 edited by Steven Ly data[{"edit":"1","id":"1552","hours":"4","minutes":"0","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (31)
+2014/09/03 09:35:42 [info] [app] OT ID 1553 edited by Steven Ly data[{"edit":"1","id":"1553","hours":"2","minutes":"45","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (31)
+2014/09/03 09:35:42 [info] [app] OT ID 1554 edited by Steven Ly data[{"edit":"1","id":"1554","hours":"2","minutes":"30","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (31)
+2014/09/03 09:35:42 [info] [app] OT ID 1555 edited by Steven Ly data[{"edit":"1","id":"1555","hours":"2","minutes":"11","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (31)
+2014/09/03 09:35:42 [info] [app] OT ID 1556 edited by Steven Ly data[{"edit":"1","id":"1556","hours":"3","minutes":"19","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (31)
+2014/09/03 09:35:42 [info] [app] OT ID 1557 edited by Steven Ly data[{"edit":"1","id":"1557","hours":"2","minutes":"12","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (31)
+2014/09/03 09:35:42 [info] [app] OT ID 1558 edited by Steven Ly data[{"edit":"1","id":"1558","hours":"3","minutes":"33","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (31)
+2014/09/03 09:35:42 [info] [app] OT ID 1559 edited by Steven Ly data[{"edit":"1","id":"1559","hours":"1","minutes":"0","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (31)
+2014/09/03 09:35:42 [info] [app] OT ID 1561 edited by Steven Ly data[{"edit":"1","id":"1561","hours":"4","minutes":"4","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (31)
+2014/09/03 09:35:42 [info] [app] OT ID 1562 edited by Steven Ly data[{"edit":"1","id":"1562","hours":"4","minutes":"9","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (31)
+2014/09/03 09:36:39 [info] [app] OT ID 1552 edited by Steven Ly data[{"edit":"1","id":"1552","hours":"4","minutes":"0","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (31)
+2014/09/03 09:36:39 [info] [app] OT ID 1553 edited by Steven Ly data[{"edit":"1","id":"1553","hours":"4","minutes":"45","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (31)
+2014/09/03 09:36:39 [info] [app] OT ID 1554 edited by Steven Ly data[{"edit":"1","id":"1554","hours":"4","minutes":"30","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (31)
+2014/09/03 09:36:39 [info] [app] OT ID 1555 edited by Steven Ly data[{"edit":"1","id":"1555","hours":"4","minutes":"11","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (31)
+2014/09/03 09:36:39 [info] [app] OT ID 1556 edited by Steven Ly data[{"edit":"1","id":"1556","hours":"4","minutes":"19","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (31)
+2014/09/03 09:36:39 [info] [app] OT ID 1557 edited by Steven Ly data[{"edit":"1","id":"1557","hours":"4","minutes":"12","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (31)
+2014/09/03 09:36:39 [info] [app] OT ID 1558 edited by Steven Ly data[{"edit":"1","id":"1558","hours":"4","minutes":"33","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (31)
+2014/09/03 09:36:39 [info] [app] OT ID 1559 edited by Steven Ly data[{"edit":"1","id":"1559","hours":"4","minutes":"0","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (31)
+2014/09/03 09:36:39 [info] [app] OT ID 1561 edited by Steven Ly data[{"edit":"1","id":"1561","hours":"4","minutes":"4","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (31)
+2014/09/03 09:36:39 [info] [app] OT ID 1562 edited by Steven Ly data[{"edit":"1","id":"1562","hours":"4","minutes":"9","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (31)
+2014/09/03 09:38:07 [info] [app] OT ID 1552 edited by Steven Ly data[{"edit":"1","id":"1552","hours":"4","minutes":"0","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (31)
+2014/09/03 09:38:07 [info] [app] OT ID 1553 edited by Steven Ly data[{"edit":"1","id":"1553","hours":"4","minutes":"0","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (31)
+2014/09/03 09:38:07 [info] [app] OT ID 1554 edited by Steven Ly data[{"edit":"1","id":"1554","hours":"4","minutes":"0","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (31)
+2014/09/03 09:38:07 [info] [app] OT ID 1555 edited by Steven Ly data[{"edit":"1","id":"1555","hours":"4","minutes":"0","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (31)
+2014/09/03 09:38:07 [info] [app] OT ID 1556 edited by Steven Ly data[{"edit":"1","id":"1556","hours":"4","minutes":"0","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (31)
+2014/09/03 09:38:07 [info] [app] OT ID 1557 edited by Steven Ly data[{"edit":"1","id":"1557","hours":"4","minutes":"0","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (31)
+2014/09/03 09:38:07 [info] [app] OT ID 1558 edited by Steven Ly data[{"edit":"1","id":"1558","hours":"4","minutes":"0","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (31)
+2014/09/03 09:38:07 [info] [app] OT ID 1559 edited by Steven Ly data[{"edit":"1","id":"1559","hours":"4","minutes":"0","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (31)
+2014/09/03 09:38:07 [info] [app] OT ID 1561 edited by Steven Ly data[{"edit":"1","id":"1561","hours":"4","minutes":"0","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (31)
+2014/09/03 09:38:07 [info] [app] OT ID 1562 edited by Steven Ly data[{"edit":"1","id":"1562","hours":"4","minutes":"0","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (31)
+2014/09/03 09:53:52 [info] [app] OT ID 1562 approved by Steven Ly data[{"edit":"1","id":"1562","hours":"4","minutes":"0","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (25)
+2014/09/03 09:53:58 [info] [app] OT ID 1562 approved by Steven Ly data[{"edit":"1","id":"1562","hours":"4","minutes":"0","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (25)
+2014/09/03 09:54:08 [info] [app] OT ID 1561 approved by Steven Ly data[{"edit":"1","id":"1561","hours":"4","minutes":"0","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (25)
+2014/09/03 09:54:08 [info] [app] OT ID 1562 approved by Steven Ly data[{"edit":"1","id":"1562","hours":"4","minutes":"0","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (25)
+2014/09/03 10:05:54 [info] [app] OT ID 1561 approved by Steven Ly data[{"edit":"1","id":"1561","hours":"4","minutes":"0","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (34)
+2014/09/03 10:05:54 [info] [app] OT ID 1562 approved by Steven Ly data[{"edit":"1","id":"1562","hours":"4","minutes":"30","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (34)
+2014/09/03 10:34:19 [info] [app] OT ID 1564 denied by Steven Ly data[{"edit":"1","id":"1564","hours":"5","minutes":"0","sub_code_id":"2001-1"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (32)
+2014/09/03 10:36:51 [info] [app] OT ID 1563 denied by Steven Ly data[{"edit":"1","id":"1563","hours":"4","minutes":"0","sub_code_id":"2001-1"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (32)
