@@ -6510,3 +6510,17 @@ in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (34
 in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (32)
 2014/09/03 10:36:51 [info] [app] OT ID 1563 denied by Steven Ly data[{"edit":"1","id":"1563","hours":"4","minutes":"0","sub_code_id":"2001-1"}]
 in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (32)
+2014/09/04 06:18:07 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
+2014/09/04 06:18:13 [info] [app] Login successful for user 1078 IP: 192.168.1.48
+in /var/www/html/hrips/protected/components/UserIdentity.php (45)
+2014/09/04 06:18:26 [info] [app] LOA 928 Edited by Steven Ly
+in /var/www/html/hrips/protected/controllers/HrisLoaApplicationController.php (83)
+2014/09/04 06:19:59 [info] [app] OT ID 1553 edited by Steven Ly data[{"edit":"1","id":"1553","hours":"4","minutes":"1","sub_code_id":"2001-12"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (90)
+2014/09/04 06:20:37 [info] [app] OT ID 1553 approved by Steven Ly data[{"edit":"1","id":"1553","hours":"4","minutes":"2","sub_code_id":"2001-12"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (64)
+2014/09/04 06:21:03 [info] [app] OT ID 1554 denied by Steven Ly data[{"edit":"1","id":"1554","hours":"4","minutes":"0","sub_code_id":"2001-13"}]
+in /var/www/html/hrips/protected/controllers/HrisOtApplicationController.php (32)
+2014/09/04 06:21:15 [info] [app] Visitor from IP 192.168.1.48
+in /var/www/html/hrips/protected/controllers/SiteController.php (159)
