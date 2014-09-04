@@ -131,7 +131,6 @@ function deleteRow(tblChildren) {
 	'id'=>'emp-information-form',
 	'enableAjaxValidation'=>false,
 )); ?>
-
 <?php
 $yearNow = date("Y");
 $yearFrom = $yearNow-100;
@@ -151,13 +150,13 @@ $arrYesNo = array('1'=>'Yes', '0'=>'No');
 	<p class="note">Use <b>UPPERCASE</b> in filling up the form.</p>
 	
 	<?php echo $form->errorSummary(array($model, $modelFam, $modChild, $modEduc, $modCivil, $modWork, $modOrg, $modTrain, $modOther, $modQueries, $modRef)); ?>
-	<? if(!empty($children_error)){ echo "<div class='errorSummary'>Please fix the following input errors in the <b>Children</b> section</div>" ; }?>
-	<? if(!empty($cvlservice_error)){ echo "<div class='errorSummary'>Please fix the following input errors in the <b>Civil Service Eligibility</b> section</div>" ; }?>
-	<? if(!empty($workexp_error)){ echo "<div class='errorSummary'>Please fix the following input errors in the <b>Work Experience</b> section</div>" ; }?>
-	<? if(!empty($cvcorg_error)){ echo "<div class='errorSummary'>Please fix the following input errors in the <b>Voluntary Work</b> section</div>" ; }?>
-	<? if(!empty($training_error)){ echo "<div class='errorSummary'>Please fix the following input errors in the <b>Training Programs</b> section</div>" ; }?>
-	<? if(!empty($ref_error)){ echo "<div class='errorSummary'>Please fix the following input errors in the <b>References</b> section</div>" ; }?>
-	<? //if($query_error==0){ echo "<div class='errorSummary'>Please answer all the questions in section <b>IX</b>.</div>"; }else { echo '<br><br>no error';} ?>
+	<?php if(!empty($children_error)){ echo "<div class='errorSummary'>Please fix the following input errors in the <b>Children</b> section</div>" ; }?>
+	<?php if(!empty($cvlservice_error)){ echo "<div class='errorSummary'>Please fix the following input errors in the <b>Civil Service Eligibility</b> section</div>" ; }?>
+	<?php if(!empty($workexp_error)){ echo "<div class='errorSummary'>Please fix the following input errors in the <b>Work Experience</b> section</div>" ; }?>
+	<?php if(!empty($cvcorg_error)){ echo "<div class='errorSummary'>Please fix the following input errors in the <b>Voluntary Work</b> section</div>" ; }?>
+	<?php if(!empty($training_error)){ echo "<div class='errorSummary'>Please fix the following input errors in the <b>Training Programs</b> section</div>" ; }?>
+	<?php if(!empty($ref_error)){ echo "<div class='errorSummary'>Please fix the following input errors in the <b>References</b> section</div>" ; }?>
+	<?php //if($query_error==0){ echo "<div class='errorSummary'>Please answer all the questions in section <b>IX</b>.</div>"; }else { echo '<br><br>no error';} ?>
 <fieldset class="myclass"> <!--Personal info ;-->
 	<h4><i>I. PERSONAL INFORMATION</i></h4>
 	<div class="CSSTableGenerator">
@@ -168,7 +167,7 @@ $arrYesNo = array('1'=>'Yes', '0'=>'No');
 		
 		<tr>
 			<td><?php echo $form->labelEx($model, 'EmpID'); ?></td>
-			<td colspan="4"><?php echo $form->textField($model,'EmpID'); ?>
+			<td colspan="4"><?php echo $form->textField($model,'EmpID',array('readonly'=>'readonly')); ?>
 				<?php echo $form->error($model,'EmpID'); ?></td>
 		</tr>
 		
@@ -195,7 +194,8 @@ $arrYesNo = array('1'=>'Yes', '0'=>'No');
 		
 		<tr>
 			<td><?php echo $form->labelEx($model,'BirthDate'); ?></td>
-			<td><?php $this->widget('zii.widgets.jui.CJuiDatePicker',array(
+			<td><?php echo $form->textField($model,'BirthDate',array('size'=>60,'maxlength'=>100,'readonly'=>'readonly')); ?>
+                            <?php /* $this->widget('zii.widgets.jui.CJuiDatePicker',array(
 				'model'=>$model,
 				//'id'=>'mybday',
 				'name'=>'EmpInformation[BirthDate]',
@@ -212,7 +212,7 @@ $arrYesNo = array('1'=>'Yes', '0'=>'No');
 					),
 				'language' => '',	
 				//'mode'=>'date',
-				));?>
+				)); */?>
 				<?php echo $form->error($model,'BirthDate'); ?></td>
 			<td rowspan="2"><?php echo $form->labelEx($model,'ResidentialAddress'); ?></td>
 			<td colspan="2" rowspan="2"><?php echo $form->textArea($model,'ResidentialAddress',array('rows'=>6, 'cols'=>30, 'style'=>'width: 380px; height: 72px;')); ?>
@@ -227,7 +227,7 @@ $arrYesNo = array('1'=>'Yes', '0'=>'No');
 		
 		<tr>
 			<td><?php echo $form->labelEx($model,'Gender'); ?></td>
-			<td><?php echo $form->dropDownList($model, 'Gender', CHtml::listData(EmpGender::model()->findAll(array('order'=>'ID asc')),'ID','gender'),array('required'=>'required','prompt'=>'- select -')); ?></td>
+			<td><?php echo $form->dropDownList($model, 'Gender', array('1'=>'Male','2'=>'Female') ,array('required'=>'required','prompt'=>'- select -','readonly'=>'readonly')); ?></td>
 			<td><?php echo $form->labelEx($model,'RAZipCode'); ?></td>
 			<td colspan="2"><?php echo $form->textField($model,'RAZipCode',array('size'=>15,'maxlength'=>15,'style'=>"width:380px;")); ?>
 				<?php echo $form->error($model,'RAZipCode'); ?></td>
@@ -235,7 +235,7 @@ $arrYesNo = array('1'=>'Yes', '0'=>'No');
 		
 		<tr>
 			<td><?php echo $form->labelEx($model,'CivilStat'); ?></td>
-			<td><?php echo $form->dropDownList($model, 'CivilStat', CHtml::listData(EmpCivilstat::model()->findAll(array('order'=>'ID asc')),'ID','CivilStat'),array('required'=>'required','prompt'=>'- select -')); ?>
+			<td><?php echo $form->dropDownList($model, 'CivilStat', array('1'=>'Single','2'=>'Married'),array('required'=>'required','prompt'=>'- select -')); ?>
 				<?php echo $form->error($model,'CivilStat'); ?></td>
 			<td><?php echo $form->labelEx($model,'RATelno'); ?></td>
 			<td colspan="2"><?php echo $form->textField($model,'RATelno',array('size'=>30,'maxlength'=>30,'style'=>"width:380px;")); ?>
@@ -244,7 +244,7 @@ $arrYesNo = array('1'=>'Yes', '0'=>'No');
 		
 		<tr>
 			<td><?php echo $form->labelEx($model,'Citizenship'); ?></td>
-			<td><?php echo $form->textField($model,'Citizenship',array('size'=>20,'maxlength'=>20)); ?>
+			<td><?php echo $form->textField($model,'Citizenship',array('size'=>20,'maxlength'=>20,'readonly'=>'readonly')); ?>
 				<?php echo $form->error($model,'Citizenship'); ?></td>
 			<td rowspan="2"><?php echo $form->labelEx($model,'HomeAddress'); ?></td>
 			<td colspan="2" rowspan="2"><?php echo $form->textArea($model,'HomeAddress',array('rows'=>6, 'cols'=>30, 'style'=>'width: 380px; height: 72px;'));?>
@@ -268,7 +268,7 @@ $arrYesNo = array('1'=>'Yes', '0'=>'No');
 		
 		<tr>
 			<td><?php echo $form->labelEx($model,'BloodType'); ?></td>
-			<td><?php echo $form->textField($model,'BloodType',array('size'=>5,'maxlength'=>5)); ?>
+			<td><?php echo $form->textField($model,'BloodType',array('size'=>5,'maxlength'=>5,'readonly'=>'readonly')); ?>
 				<?php echo $form->error($model,'BloodType'); ?></td>
 			<td><?php echo $form->labelEx($model,'HATelno'); ?></td>
 			<td colspan="2"><?php echo $form->textField($model,'HATelno',array('size'=>30,'maxlength'=>30,'style'=>"width:380px;")); ?>
@@ -277,7 +277,7 @@ $arrYesNo = array('1'=>'Yes', '0'=>'No');
 		
 		<tr>
 			<td><?php echo $form->labelEx($model,'HDMF'); ?></td>
-			<td><?php echo $form->textField($model,'HDMF',array('size'=>20,'maxlength'=>20)); ?>
+			<td><?php echo $form->textField($model,'HDMF',array('size'=>20,'maxlength'=>20,'readonly'=>'readonly')); ?>
 				<?php echo $form->error($model,'HDMF'); ?></td>
 			<td><?php echo $form->labelEx($model,'EmailAddress'); ?></td>
 			<td colspan="2"><?php echo $form->textField($model,'EmailAddress',array('size'=>25,'maxlength'=>25,'style'=>"width:380px;")); ?>
@@ -286,7 +286,7 @@ $arrYesNo = array('1'=>'Yes', '0'=>'No');
 		
 		<tr>
 			<td><?php echo $form->labelEx($model,'PHIC'); ?></td>
-			<td><?php echo $form->textField($model,'PHIC',array('size'=>20,'maxlength'=>20)); ?>
+			<td><?php echo $form->textField($model,'PHIC',array('size'=>20,'maxlength'=>20,'readonly'=>'readonly')); ?>
 				<?php echo $form->error($model,'PHIC'); ?></td>
 			<td><?php echo $form->labelEx($model,'ContactNo'); ?></td>
 			<td colspan="2"><?php echo $form->textField($model,'ContactNo',array('size'=>25,'maxlength'=>25,'style'=>"width:380px;")); ?>
@@ -295,17 +295,26 @@ $arrYesNo = array('1'=>'Yes', '0'=>'No');
 		
 		<tr>
 			<td><?php echo $form->labelEx($model,'SSS'); ?></td>
-			<td><?php echo $form->textField($model,'SSS',array('size'=>20,'maxlength'=>20)); ?>
+			<td><?php echo $form->textField($model,'SSS',array('size'=>20,'maxlength'=>20,'readonly'=>'readonly')); ?>
 				<?php echo $form->error($model,'SSS'); ?></td>
 			<td><?php echo $form->labelEx($model,'TIN'); ?></td>
-			<td colspan="2"><?php echo $form->textField($model,'TIN',array('size'=>20,'maxlength'=>20,'style'=>"width:380px;")); ?>
+			<td colspan="2"><?php echo $form->textField($model,'TIN',array('size'=>20,'maxlength'=>20,'style'=>"width:380px;",'readonly'=>'readonly')); ?>
 				<?php echo $form->error($model,'TIN'); ?></td>
 		</tr>
 		
 		<tr>
+			<td><?php echo $form->labelEx($model,'Position'); ?></td>
+			<td><?php echo $form->textField($model,'Position',array('readonly'=>'readonly')); ?><?php echo $form->error($model,'AgencyEmpNo'); ?></td>
+                        <td><?php echo $form->labelEx($model,'Department'); ?></td>
+			<td colspan="2"><?php echo $form->textField($model,'Department',array('readonly'=>'readonly')); ?><?php echo $form->error($model,'AgencyEmpNo'); ?></td>
+		</tr>
+                
+                <tr>
 			<td><?php echo $form->labelEx($model,'AgencyEmpNo'); ?></td>
-			<td colspan="4"><?php echo $form->textField($model,'AgencyEmpNo'); ?>
-				<?php echo $form->error($model,'AgencyEmpNo'); ?></td>
+			<td><?php echo $form->textField($model,'AgencyEmpNo'); ?><?php echo $form->error($model,'AgencyEmpNo'); ?></td>
+                        <td><?php echo $form->labelEx($model,'DateHire'); ?></td>
+			<td colspan="2"><?php echo $form->textField($model,'DateHire',array('readonly'=>'readonly')); ?><?php echo $form->error($model,'AgencyEmpNo'); ?></td>
+                        
 		</tr>
 		
 	</table>
