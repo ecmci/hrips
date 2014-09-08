@@ -68,7 +68,7 @@ Yii::import('application.models._base.BaseEmpInformation');
  * @property EmpTraining[] $empTrainings
  * @property EmpWorkexp[] $empWorkexps
  */
-class EmpInformation0 extends CActiveRecord
+class EmpInformation0 extends GxActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
@@ -108,7 +108,7 @@ class EmpInformation0 extends CActiveRecord
 			array('ContactNo, EmailAddress, TaxCertNo', 'length', 'max'=>25),
 			array('Citizenship, SSS, TIN, PHIC, HDMF, AcctNo, Allowance', 'length', 'max'=>20),
 			array('BloodType', 'length', 'max'=>5),
-			array('Position, BirthDate, DateHire, DateRehire, DateResignation, DateTermination, DateRetirement, DateAPE, IssuedOn, ResidentialAddress,HomeAddress', 'safe'),
+			array('Position, Department, BirthDate, DateHire, DateRehire, DateResignation, DateTermination, DateRetirement, DateAPE, IssuedOn, ResidentialAddress,HomeAddress', 'safe'),
 			array('CertifyTrue', 'compare', 'compareValue' => true, 
               'message' => 'You must declare under oath the authenticity of the information in this Personal Data Sheet by checking the appropriate box below.' ),
 			// The following rule is used by search().
@@ -278,9 +278,4 @@ class EmpInformation0 extends CActiveRecord
 		
 		return $modifiedby;
 	}
-  
-  protected function afterSave(){
-    //Yii::log(print_r($this->attributes,true),'error','app');
-    return parent::afterSave();
-  }
 }

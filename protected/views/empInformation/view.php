@@ -8,7 +8,7 @@ $userlvl=$curruser->access_lvl_id;
 //if($userlvl=='3' || $userlvl=='4'){ //admin and hr can see the menu to update this record
 	$this->menu=array(
 		//array('label'=>'View EmpInformation', 'url'=>array('view','id'=>$model->EmpID)),
-		array('label'=>'Create PDS', 'url'=>array('create')),
+		//array('label'=>'Create PDS', 'url'=>array('create')),
 		array('label'=>'Update PDS', 'url'=>array('update', 'id'=>$model->EmpID)),
 		array('label'=>'View my PDS ('.Yii::app()->user->emp_id .')', 'url'=>array('view', 'id'=>Yii::app()->user->emp_id)),
 		array('label'=>'View All PDS', 'url'=>array('admin')),
@@ -371,14 +371,14 @@ foreach($data as $i=>$d){
 		<tr><td></td></tr>
 		<tr>
 			<td><b>Are you related by consanguinity or affinity to any of the following :<br><br>
-				a.</b> Within the third degree (for National Government Employees): <br>
+				a.</b> Within the third degree: <br>
 				appointing authority, recommending authority, chief of office/bureau/department or person who has immediate supervision over you in the Office, Bureau, Department where you will be appointed, with ECMCI and any affiliated with Eva Care Group? &nbsp; <font color="red"><b><?php echo $answer=$data->ThirdDegreeRelated=="1" ? "Yes" : "No"; ?></b></font>&nbsp;&nbsp;&nbsp;<i><?php if(!empty($data->TDRdetails)){ echo $deets=$data->TDRdetails;} ?></i>
 				
 			</td>
 		</tr>
 		<tr style="border-bottom: 2px solid black !important;">
 			<td>
-				<b>b.</b> Within the fourth degree (for Local Government Employees):<br>
+				<b>b.</b> Within the fourth degree:<br>
 				appointing authority or recommending authority where you will be appointed?
 				&nbsp; <font color="red"><b><?php echo $answer=$data->FourthDegreeRelated=="1" ? "Yes" : "No"; ?></b></font>&nbsp;&nbsp;&nbsp;<i><?php if(!empty($data->FDRdetails)){ echo $deets=$data->FDRdetails;} ?></i>
 			</td>

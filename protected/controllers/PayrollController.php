@@ -26,8 +26,9 @@ public function accessRules() {
 
 	public function actionTimesheet(){
 		$model = new Payroll('timesheet');
+                $data = null;
 		
-		if($_POST['Payroll']){
+		if(isset($_POST['Payroll'])){
 			$model->attributes = $_POST['Payroll'];
 			try{
 				$sql = "SELECT CONVERT(varchar, eh.[TimeIn], 100) as [ClockedIn],CONVERT(varchar, eh.[TimeOut], 100) as [ClockedOut], mjl.[Description] as [JobCode], DATEDIFF(hh,eh.[TimeIn], eh.[TimeOut]) as [Hours], eh.BreakFlag as BreakAfter

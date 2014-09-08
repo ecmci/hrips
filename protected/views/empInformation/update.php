@@ -11,7 +11,7 @@
 $this->menu=array(
 	//array('label'=>'View Information', 'url'=>array('view', 'id'=>$model->EmpID)),
 	//array('label'=>'View my PDS', 'url'=>array('view', 'id'=>Yii::app()->user->emp_id)),
-	array('label'=>'Create PDS', 'url'=>array('create')),
+	//array('label'=>'Create PDS', 'url'=>array('create')),
 	array('label'=>'View my PDS ('.Yii::app()->user->emp_id .')', 'url'=>array('view', 'id'=>Yii::app()->user->emp_id)),
 	array('label'=>'View all PDS', 'url'=>array('admin')),
 	array('label'=>'Generate Reports', 'url'=>array('ReportViewer/index'))
