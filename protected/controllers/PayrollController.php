@@ -11,7 +11,7 @@ public function filters() {
 public function accessRules() {
 	return array(
 			array('allow', 
-				'actions'=>array('index','admin','viewpayslip'),
+				'actions'=>array('index','admin','viewpayslip','punches'),
 				'users'=>array('@'),
 				),
 			array('allow', 
@@ -24,7 +24,8 @@ public function accessRules() {
 			);
 }
 
-	public function actionTimesheet(){
+ 
+  public function actionTimesheet(){
 		$model = new Payroll('timesheet');
                 $data = null;
 		
