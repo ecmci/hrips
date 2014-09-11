@@ -5,6 +5,24 @@
       <img class="img-polaroid img-rounded profile-image" src="<?php echo Yii::app()->baseUrl; ?>/images/profilepics/<?php echo $user->hrisUsers->image; ?>">
     </div>
   </div>
+  <div class="row-fluid">
+     <div class="span12">
+        <p><a id="change-profile-pic" href="#" onclick="$('#prof-pic-up-form').toggle();">Change Profile Picture</a></p>
+        <div id="prof-pic-up-form" style="display:none;">
+          <?php
+          $form = $this->beginWidget('GxActiveForm', array(
+            'action' => Yii::app()->createAbsoluteUrl('/admin/hrisUsers/updateprofilepic'),
+            'htmlOptions' => array('enctype' => 'multipart/form-data'),
+            'method' => 'post',
+          ));
+          ?>                
+          <?php echo $form->hiddenField(new HrisUsers, 'emp_id', array('value' => Yii::app()->user->getState('emp_id'))); ?>
+          <?php echo $form->fileField(new HrisUsers, 'image'); ?>
+          <?php echo CHtml::submitButton('Upload', array('class' => 'btn')); ?>             
+          <?php $this->endWidget(); ?>
+        </div>
+     </div> 
+  </div>
   <br/>
   <div class="row-fluid">
     <div class="span12">
