@@ -13,6 +13,7 @@
  * @property string $in_datetime
  * @property string $out_datetime
  * @property string $reason
+ * @property integer $ifexistid
  * @property string $approved_hours
  * @property integer $sup_id
  * @property integer $sup_approve
@@ -48,27 +49,7 @@
 class OtApplication extends CActiveRecord
 {
 	public $from, $to;
-  
-  /**
-   *    Queries and Retrieves OT records from the Time Clock 
-   *    @return array OT records
-   */        
-  public function getOvertimes(){
-    $tcsvr = Yii::app()->tcdb;
-    //queries the server and returns an array of records
-    $records = $tcsvr->createCommand()
-              ->select('EmployeeId,TimeIn,TimeOut') 
-              ->from('EmployeeHours')
-              ->where("JobCode ='2001'") 
-              ->andWhere("TimeIn >= '".$this->from."'")
-              ->andWhere("TimeIn <= '".$this->to."'")
-              ->andWhere("EmployeeId = '".Yii::app()->user->getState("emp_id")."'")
-              ->order("EmployeeId asc, TimeIn asc")
-              ->queryAll();
-      return  $records;
-  }
-  
-  /**
+	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
 	 * @return OtApplication the static model class
@@ -77,7 +58,55 @@ class OtApplication extends CActiveRecord
 	{
 		return parent::model($className);
 	}
-
+	
+	public function getOvertimes(){ //kulang
+		$tcsvr=Yii::app()->tcdb;
+		$records = $tcsvr->createCommand()
+				->select('EmployeeId,TimeIn,TimeOut,RecordId')
+				->from('EmployeeHours')
+				->where("JobCode='2001'")
+				->andwhere("TimeIn >='".$this->from."'")
+				->andwhere("TimeIn <='".$this->to."'")
+				->andwhere("EmployeeId ='".Yii::app()->user->getState("emp_id")."'")
+				->order('EmployeeId asc, TimeIn asc')
+				->queryAll();
+				return $records;
+		
+	}
+	public function searchTimeClock(){ 
+		return $dataProvider=new CArrayDataProvider($this->getOvertimes(),array(
+		'keyField'=>'RecordId'
+			));
+	}
+	public function renderApplyButton($data, $row){
+		
+		if($this->ifExist($data["RecordId"])){
+		//return '';
+		return CHtml::link('Applied','',array('class'=>'btn btn-default','disabled'=>'true','style'=>'width: 50px;'));
+		}else{
+		return CHtml::link('Apply','#',array('class'=>'btn btn-success','style'=>'width: 50px;','onclick'=>'apply("'.$data["TimeIn"].'","'.$data["TimeOut"].'","'.$data["RecordId"].'");'));
+		}
+		
+	}
+	public function ifExist($ifexistid){
+	
+		return self::model()->exists('ifexistid='.$ifexistid.' AND next_lvl_id NOT IN (9,10)');
+	}
+	protected function beforeSave(){
+		$this->in_datetime=date('Y-m-d H:i:s',strtotime($this->in_datetime));
+		$this->out_datetime=date('Y-m-d H:i:s',strtotime($this->out_datetime));
+		return parent::beforeSave();
+	}
+	protected function beforeValidate()
+	{
+		$this->dept_id=Yii::app()->user->getState('dept_id'); //not OtApplication['']
+		$this->emp_id=Yii::app()->user->getState('emp_id');
+		$this->next_lvl_id=2;
+		$this->job_code_id=2001;
+		$this->sub_code_id='2001-13';
+		$this->timestamp=new CDbExpression('Now()');
+		return parent::beforeValidate();
+	}
 	/**
 	 * @return string the associated database table name
 	 */
@@ -95,13 +124,13 @@ class OtApplication extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('dept_id, emp_id, next_lvl_id, job_code_id, sub_code_id, in_datetime, out_datetime, reason, timestamp', 'required'),
-			array('dept_id, emp_id, next_lvl_id, job_code_id, sup_id, sup_approve, mgr_id, mgr_approve, hr_id, hr_approve, employer_id, employer_approve, replicated_to_emp_hrs, is_entered', 'numerical', 'integerOnly'=>true),
+			array('dept_id, emp_id, next_lvl_id, job_code_id, ifexistid, sup_id, sup_approve, mgr_id, mgr_approve, hr_id, hr_approve, employer_id, employer_approve, replicated_to_emp_hrs, is_entered', 'numerical', 'integerOnly'=>true),
 			array('sub_code_id', 'length', 'max'=>10),
 			array('approved_hours', 'length', 'max'=>64),
-			array('from,to,sup_approve_datetime, sup_disapprove_reason, mgr_approve_datetime, mgr_disapprove_reason, hr_approve_datetime, hr_disapprove_reason, employer_approve_datetime, employer_disapprove_reason', 'safe'),
+			array('sup_approve_datetime, sup_disapprove_reason, from, to, ifexistid, mgr_approve_datetime, mgr_disapprove_reason, hr_approve_datetime, hr_disapprove_reason, employer_approve_datetime, employer_disapprove_reason', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, dept_id, emp_id, next_lvl_id, job_code_id, sub_code_id, in_datetime, out_datetime, reason, approved_hours, sup_id, sup_approve, sup_approve_datetime, sup_disapprove_reason, mgr_id, mgr_approve, mgr_approve_datetime, mgr_disapprove_reason, hr_id, hr_approve, hr_approve_datetime, hr_disapprove_reason, employer_id, employer_approve, employer_approve_datetime, employer_disapprove_reason, replicated_to_emp_hrs, is_entered, timestamp', 'safe', 'on'=>'search'),
+			array('id, dept_id, emp_id, next_lvl_id, job_code_id, sub_code_id, in_datetime, out_datetime, reason, ifexistid, approved_hours, sup_id, sup_approve, sup_approve_datetime, sup_disapprove_reason, mgr_id, mgr_approve, mgr_approve_datetime, mgr_disapprove_reason, hr_id, hr_approve, hr_approve_datetime, hr_disapprove_reason, employer_id, employer_approve, employer_approve_datetime, employer_disapprove_reason, replicated_to_emp_hrs, is_entered, timestamp', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -140,6 +169,7 @@ class OtApplication extends CActiveRecord
 			'in_datetime' => 'In Datetime',
 			'out_datetime' => 'Out Datetime',
 			'reason' => 'Reason',
+			'ifexistid' => 'Ifexistid',
 			'approved_hours' => 'Approved Hours',
 			'sup_id' => 'Sup',
 			'sup_approve' => 'Sup Approve',
@@ -183,6 +213,7 @@ class OtApplication extends CActiveRecord
 		$criteria->compare('in_datetime',$this->in_datetime,true);
 		$criteria->compare('out_datetime',$this->out_datetime,true);
 		$criteria->compare('reason',$this->reason,true);
+		$criteria->compare('ifexistid',$this->ifexistid);
 		$criteria->compare('approved_hours',$this->approved_hours,true);
 		$criteria->compare('sup_id',$this->sup_id);
 		$criteria->compare('sup_approve',$this->sup_approve);
