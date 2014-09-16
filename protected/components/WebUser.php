@@ -33,9 +33,9 @@ class WebUser extends CWebUser
     		case HrisAccessLvl::$ADMINISTRATOR: $acl = 'admin'; break;
     		case HrisAccessLvl::$HR : $acl = 'hr'; break;
     		case HrisAccessLvl::$SUPERVISOR: $acl = 'sup'; break;
-        case HrisAccessLvl::$MANAGER: $acl = 'mgr'; break;
+                case HrisAccessLvl::$MANAGER: $acl = 'mgr'; break;
     		case HrisAccessLvl::$EMPLOYEE: $acl = 'emp'; break;
-        case HrisAccessLvl::$EMPLOYER : $acl = 'employer'; break; 
+                case HrisAccessLvl::$EMPLOYER : $acl = 'employer'; break; 
     		default: $acl = 'guest';
 		}
 		return $acl;

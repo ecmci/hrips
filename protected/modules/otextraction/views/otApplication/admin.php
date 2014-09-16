@@ -27,7 +27,7 @@ $('.search-form form').submit(function(){
 ?>
 <div class="portlet">
 	<div class="portlet-decoration" style="background-color: #F5F5F5;">
-		<h1>Manage Overtime Applications</h1>
+		<h1>Overtime Application</h1>
 	</div>
 
 	<?php //echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
@@ -110,7 +110,7 @@ return false;
   <div class="modal-footer">
 	<input id="ifexid" name="OtApplication[ifexistid]" hidden />
     <a class="btn" data-dismiss="modal" aria-hidden="true">Close</a>
-    <button class="btn btn-success">Save changes</button>
+    <button class="btn btn-success btn-large">Apply</button>
   </div>
 </form>
 </div>

@@ -612,8 +612,10 @@ class EmpInformationController extends EmpInformation0Controller {
     }
 
     public function actionView($id) {
+        
         $curruser = HrisUsers::model()->findByPk(Yii::app()->user->emp_id);
-        $model = $this->loadModel($id);
+        $model = EmpInformation::model()->findByPk($id);
+        if(empty($model)) $this->redirect(array('create'));
         //employees can only view their own PDS
         if (!in_array($curruser->access_lvl_id, array(HrisAccessLvl::$HR, HrisAccessLvl::$EMPLOYER)) and $id != Yii::app()->user->getState('emp_id')) {
             throw new CHttpException(401, "Access denied. Only the HR, Employer and Administrator can view this PDS.");
@@ -623,6 +625,7 @@ class EmpInformationController extends EmpInformation0Controller {
                 'model' => $model,
             ));
         }
+        
     }
     
     

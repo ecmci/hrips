@@ -79,7 +79,7 @@
         $hours = array();
         $minutes = array();
         $h = empty($ex[0]) ? $diff['hours'] : $ex[0];
-        $m = ( empty($ex[2]) and $ex[2] != '0' ) ? $diff['mins'] : $ex[2];
+        $m = ( empty($ex[2]) ) ? $diff['mins'] : $ex[2];
         for($i=0;$i<24;$i++){
             $disp = $i < 10 ? '0'.$i : $i;
             $hours[$i] = $disp;
