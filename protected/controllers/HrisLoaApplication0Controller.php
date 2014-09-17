@@ -87,7 +87,7 @@ public function accessRules() {
 		
 		//edit policy
 		if(!$model->canEdit())
-			throw new CHttpException(401,'Action not allowed.');
+			throw new CHttpException(401,'Action is not allowed because at least one approver has already signed. Please cancel this and make a new one instead.');
 
 		$this->performAjaxValidation($model, 'hris-loa-application-form');
 			

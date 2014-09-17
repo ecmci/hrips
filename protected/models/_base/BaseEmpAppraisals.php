@@ -19,6 +19,10 @@
  * @property string $IncreaseTotal
  * @property string $DateEffective
  * @property string $Notes
+ * @property string $prevMove
+ * @property string $curMove
+ * @property string $movType
+ * @property string $Notes
  * @property integer $UpdateToPayroll
  * @property integer $ShowNotif
  * @property integer $PayrollSync

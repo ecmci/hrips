@@ -9,22 +9,22 @@
 	<table>
 		<tr>
 			<td><?php echo $form->label($model, 'ID'); ?>
-				<?php echo $form->textField($model, 'ID'); ?>
+				<?php echo $form->textField($model, 'ID'); ?> <!--'ID/id'-->
 			</td>
-			<td><?php echo $form->label($model, 'EmpID'); ?>
+			<td><?php echo $form->label($model, 'EmpID'); ?> <!--'EmpID/empId'-->
 				<?php echo $form->dropDownList($model, 'EmpID', CHtml::listData(EmpInformation::model()->findAll(array('order'=>'EmpName ASC')),'EmpID','EmpName'),array('prompt'=>'All')); ?>
 			</td>
 		</tr>
 		<tr>
-			<td><?php echo $form->label($model, 'RaiseTypeID'); ?>
+			<td><?php echo $form->label($model, 'RaiseTypeID'); ?> <!--'RaiseTypeID/RaiseType'-->
 			<?php echo $form->dropDownList($model, 'RaiseTypeID', CHtml::listData(EmpRaisetype::model()->findAll(array('order'=>'RaiseTypeCol ASC')),'recordid','RaiseTypeCol'),array('prompt'=>'All')); ?>
 			</td>
 			<td>
-				<?php echo $form->label($model, 'DateEffective'); ?>
+				<?php echo $form->label($model, 'DateEffective'); ?>  <!--'DateEffective/effectdate'-->
 				<?php $form->widget('zii.widgets.jui.CJuiDatePicker', array(
 					'model' => $model,
-					'attribute' => 'DateEffective',
-					'value' => $model->DateEffective,
+					'attribute' => 'DateEffective', //<!--'DateEffective/effectdate'-->
+					'value' => $model->DateEffective, //<!--'DateEffective/effectdate'-->
 					'options' => array(
 						'showButtonPanel' => true,
 						'changeYear' => true,

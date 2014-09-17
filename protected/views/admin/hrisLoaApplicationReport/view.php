@@ -17,7 +17,11 @@ $this->menu=array(
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data' => $model,
 	'attributes' => array(
-        //'id',
+        'id',
+        array(
+            'name'=>'timestamp',
+            'value'=>WebApp::formatDate($model->timestamp)
+        ),
         array(
 			'name' => 'nextLvl',
 			'type' => 'raw',
@@ -38,6 +42,7 @@ $this->menu=array(
 			'type' => 'raw',
 			'value' => $model->jobCode !== null ? GxHtml::link(GxHtml::encode(GxHtml::valueEx($model->jobCode)), array('jobCode/view', 'id' => GxActiveRecord::extractPkValue($model->jobCode, true))) : null,
 			),
+        
         array(
             'name'=>'from_datetime',
             'value'=>WebApp::formatDate($model->from_datetime)
@@ -95,10 +100,7 @@ $this->menu=array(
         'hr_disapprove_reason',
         'replicated_to_emp_hrs:boolean',
         
-        array(
-            'name'=>'timestamp',
-            'value'=>WebApp::formatDate($model->timestamp)
-        ),
+        
 	),
 )); ?>
 

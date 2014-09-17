@@ -126,7 +126,7 @@ abstract class BaseHrisOtApplicationReport extends GxActiveRecord {
 			'employer_approve_datetime' => Yii::t('app', 'Employer Approve Datetime'),
 			'employer_disapprove_reason' => Yii::t('app', 'Employer Disapprove Reason'),
 			'replicated_to_emp_hrs' => Yii::t('app', 'Replicated To Emp Hrs'),
-			'timestamp' => Yii::t('app', 'Timestamp'),
+			'timestamp' => Yii::t('app', 'Date Submitted'),
 			'employer' => null,
 			'sup' => null,
 			'mgr' => null,

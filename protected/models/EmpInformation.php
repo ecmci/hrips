@@ -51,6 +51,7 @@ class EmpInformation extends EmpInformation0 {
             $e->Permanent_Add = $this->HomeAddress;
             $e->Contact_No = $this->ContactNo;
             $e->Email_Add = $this->EmailAddress;
+            $e->save(false);
         }
         return parent::afterSave();
     }

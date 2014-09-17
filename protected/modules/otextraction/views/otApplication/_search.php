@@ -18,7 +18,7 @@
 	margin: 10px 0;
 }
 </style>
-	
+
 	<div class="row">
 		<div class="span2"></div>
 		<div class="span4">
@@ -29,18 +29,18 @@
 									'name'=>'OtApplication[from]', //name!!!
 									'id'=>'fromdate',
 									'value'=>$model->from,
-									'htmlOptions'=>array('required'=>'required','placeholder'=>'e.g., 2014-01-14 00:00:00'),		    		    
+									'htmlOptions'=>array('required'=>'required','placeholder'=>'e.g., 2014-01-14'),		    		    
 									'options'=>array(
 									'showAnim'=>'fade',
 									'dateFormat'=>'yy-mm-dd',
 									'timeFormat'=>'hh:mm:ss',
 									'showMinute'=> false, 
-                                                                        'changeYear'=>true,
-                                                                        'changeMonth'=>true,    
+                                    'changeYear'=>true,
+                                    'changeMonth'=>true,    
 									'onClose' => new CJavaScriptExpression('function(selectedDate) { $("#todate").datepicker("option", "minDate", selectedDate); }'),
 									),
 									'language' => '',	
-									//'mode'=>'date',
+									'mode'=>'date',
 								));?>
 	
 
@@ -52,23 +52,23 @@
 									'name'=>'OtApplication[to]', //name!!!
 									'id'=>'todate',
 									'value'=>$model->to,
-									'htmlOptions'=>array('required'=>'required','placeholder'=>'e.g., 2014-01-14 00:00:00'),		    		    
+									'htmlOptions'=>array('required'=>'required','placeholder'=>'e.g., 2014-01-14'),		    		    
 									'options'=>array(
 									'showAnim'=>'fade',
 									'dateFormat'=>'yy-mm-dd',
 									'timeFormat'=>'hh:mm:ss',
 									'showMinute'=> false,
-                                                                        'changeYear'=>true,
-                                                                        'changeMonth'=>true,     
+                                    'changeYear'=>true,
+                                    'changeMonth'=>true,     
 									'onClose' => new CJavaScriptExpression('function (selectedDate) { $("#fromdate").datepicker("option", "maxDate", selectedDate); }'),
 									),
 									'language' => '',
 									//'onClose'=>'function(selectedDate){$(".OtApplication[from]").datepicker("option","maxDate",selectedDate);}'
-									//'mode'=>'date',
+									'mode'=>'date',
 								));?>
 
 	<!--<div class="row buttons">-->
-		<?php echo CHtml::submitButton('Search',array('class'=>'btn btn-success btn-lg')); ?>
+		<?php echo CHtml::submitButton('Search',array('class'=>'btn btn-success btn-lg', 'id'=>'btnSearch')); ?>
 	<!--</div>-->
 	</div>
 </div>

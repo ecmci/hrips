@@ -56,11 +56,14 @@ $('.alert').animate({opacity: 1.0}, 30000).fadeOut('slow');
 		    'value'=>$model->from_datetime,
 		    'htmlOptions'=>array('required'=>'required','placeholder'=>'e.g., 2013-02-14 00:00:00'),		    		    
 		    'options'=>array(
-				'showAnim'=>'fade',
+				'hourText'=>'24-Hour',
+                                'showAnim'=>'fade',
 				'dateFormat'=>'yy-mm-dd',
 				'timeFormat'=>'hh:mm:ss',
-				'showMinute'=> false,            
+				'showMinute'=> false,
+                                
 		    ),
+                    
 		    'language' => '',	
 			//'mode'=>'date',
 		));?>
@@ -76,10 +79,11 @@ $('.alert').animate({opacity: 1.0}, 30000).fadeOut('slow');
 		    'value'=>$model->to_datetime,
 		    'htmlOptions'=>array('required'=>'required','placeholder'=>'e.g., 2013-02-14 23:59:00'),		    		    
 		    'options'=>array(
-		        'showAnim'=>'fade',					
+		        'hourText'=>'24-Hour',
+                        'showAnim'=>'fade',					
 		        'dateFormat'=>'yy-mm-dd',
 		        'timeFormat'=>'hh:mm:ss',
-            'showMinute'=> false,
+                        'showMinute'=> false,
 		    ),
 		    'language' => '',	
 			//'mode'=>'date',

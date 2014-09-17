@@ -15,13 +15,19 @@ class EmpInformationController extends EmpInformation0Controller {
         $current_usr_lvl = Yii::app()->user->getState('access_lvl_id');
         return array(
             array('allow',
-                'actions' => array('index','view','syncwithemployee'),
+                'actions' => array('index','view','create'),
                 'users' => array('@'),
             ),
             array('allow',
-                'actions' => array('create','update'),
+                'actions' => array('update'),
                 'users' => array('@'),
-                'roles'=>array('emp','hr','employer'),
+                'roles'=>array('hr'),
+            ),
+            array('deny', // NOTE: On 9/17/2014, it was decided that this action must be disabled.
+                'actions' => array('update'),
+                'users' => array('@'),
+                'roles'=>array('emp'),
+                'message'=>'Action Not Allowed. On 9/17/2014, it was decided that updating PDS must be disabled per Admin and HR agreement. Call them for assistance.',
             ),
             array('allow',
                 'actions' => array('admin'),
@@ -627,17 +633,4 @@ class EmpInformationController extends EmpInformation0Controller {
         }
         
     }
-    
-    
-    public function actionSyncwithemployee()
-    {
-        echo '<pre>';
-        $emps = EmpInformation::model()->findAll();
-        foreach($emps as $emp)
-        {
-            $emp->save(false);
-        }
-        echo '</pre>';
-    }
-
 }

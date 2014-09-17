@@ -322,9 +322,9 @@
                 </tr>
 
                 <tr>
-                    <td><?php echo $form->labelEx($model, 'AgencyEmpNo'); ?></td>
-                    <td><?php echo $form->textField($model, 'AgencyEmpNo'); ?><?php echo $form->error($model, 'AgencyEmpNo'); ?></td>
-                    <td><?php echo $form->labelEx($model, 'DateHire'); ?></td>
+                    <td><?php //echo $form->labelEx($model, 'AgencyEmpNo'); ?></td>
+                    <td><?php //echo $form->textField($model, 'AgencyEmpNo'); ?><?php echo $form->error($model, 'AgencyEmpNo'); ?></td>
+                    <td><?php //echo $form->labelEx($model, 'DateHire'); ?></td>
                     <td colspan="2"><?php echo $form->textField($model, 'DateHire', array('readonly' => 'readonly')); ?><?php echo $form->error($model, 'AgencyEmpNo'); ?></td>
 
                 </tr>

@@ -38,7 +38,6 @@ $('.search-form form').submit(function(){
 		)); ?>
 	</div><!-- search-form -->
 
-
 <script type="text/javascript">
 $(document).ready(function(){
 	$('#OTForm').on('submit',submit);
@@ -101,10 +100,10 @@ return false;
 	<td><i class="icon-time icon-2"></i>&nbsp;Clock out</td>
 	</tr>
 	<tr>
-	<td><input type="date" id="clockinid" name="OtApplication[in_datetime]" readonly /></td>
-	<td><input type="date" id="clockoutid" name="OtApplication[out_datetime]" readonly /></td>
+	<td><input id="clockinid" name="OtApplication[in_datetime]" readonly /></td>
+	<td><input id="clockoutid" name="OtApplication[out_datetime]" readonly /></td>
 	</tr>
-	Reason<textarea rows="4" cols="75" id="reason" name="OtApplication[reason]" required></textarea>
+	Reason<textarea rows="4" cols="69" id="reason" name="OtApplication[reason]" required></textarea>
 	</table>
   </div>
   <div class="modal-footer">

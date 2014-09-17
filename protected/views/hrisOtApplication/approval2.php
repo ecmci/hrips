@@ -16,8 +16,23 @@ Yii::app()->clientScript->registerScript('ot-approvals-ready-js',"
 DT = $('#ot-approvals').dataTable( {
     'drawCallback':function(){
         bindCheckboxEditEvt();
+        $('#check-all').removeAttr('checked');
     }
 } );
+$('#check-all').on('click',function(){
+    if($(this).is(':checked')){
+        $('.checkbox-edit').attr('checked','checked');        
+    }else{
+        $('.checkbox-edit').removeAttr('checked');
+    }
+    $('.checkbox-edit').each(function(){
+        if($(this).is(':checked')){
+            $('#row'+$(this).val()).val('1');
+        }else{
+            $('#row'+$(this).val()).val('0');
+        }
+    });
+});
 ",CClientScript::POS_READY);
 
 Yii::app()->clientScript->registerScript('ot-approvals-js',"
@@ -99,7 +114,7 @@ function bindCheckboxEditEvt()
 <table id="ot-approvals" class="table table-condensed table-striped table-hover">
   <thead>
     <tr>
-      <th></th>
+      <th><input type="checkbox" id="check-all" /></th>
       <th>ID</th>
       <th>Employee</th>      
       <th>In</th>

@@ -16,8 +16,23 @@ Yii::app()->clientScript->registerScript('ot-approvals-ready-js',"
 loaDT = $('#loa-approvals').dataTable( {
     'drawCallback': function( settings ) {
         bindCheckboxes();
+        $('#check-all').removeAttr('checked');
     },
     'dom': '<\"row-fluid\"<\"span6\"f><\"span6\"l>>t<\"row-fluid\"<\"span6\"i><\"span6\"p>>',
+});
+$('#check-all').on('click',function(){
+    if($(this).is(':checked')){
+        $('.checkbox-selector').attr('checked','checked');
+    }else{
+        $('.checkbox-selector').removeAttr('checked');
+    }
+    $('.checkbox-selector').each(function(){
+        if($(this).is(':checked')){
+            $('#row'+$(this).val()).val('1');
+        }else{
+            $('#row'+$(this).val()).val('0');
+        }
+    });
 });
 ",CClientScript::POS_READY);
 
@@ -153,7 +168,7 @@ $this->beginWidget('GxActiveForm', array(
 <table id="loa-approvals" class="table table-condensed table-striped table-hover">
   <thead>
     <tr>
-      <th></th>
+      <th><input id="check-all" type="checkbox" /></th>
       <th>ID</th>
       <th>Employee</th>      
       <th>From</th>
@@ -162,6 +177,18 @@ $this->beginWidget('GxActiveForm', array(
       <th>Type</th>
       <th width="200">Reason</th>
       <th>Submitted</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>      
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th width="200"></th>
+      <th></th>
       <th></th>
     </tr>
   </thead>

@@ -63,7 +63,7 @@ $('a.print-friendly').click(function(){
 				// ),
 		array('name'=>'EmpID',
 			'value'=>'$data->emp->EmpName'),
-		array('name'=>'RaiseTypeID',
+		array('name'=>'RaiseType',
 			'value'=>'$data->raiseType->RaiseTypeCol'),
 		'ToSalary',
 		'NightDiff',
