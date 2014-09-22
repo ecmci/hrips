@@ -168,10 +168,10 @@ class WebApp {
                     ->select('EmployeeId,TimeIn,TimeOut')
                     ->from('EmployeeHours')
                     ->where("JobCode ='2001'")  //please refer to job_code table
-                    //->andWhere("TimeIn >= '$start'")
-                    ->andWhere("TimeIn >= '2014-01-01 00:00:00'")
-                    ->andWhere("TimeIn <= '2014-06-30 23:55:00'")
-                    ->andWhere("EmployeeId = '1078'")
+                    ->andWhere("TimeIn >= '$start'")
+                    //->andWhere("TimeIn >= '2014-01-01 00:00:00'")
+                    //->andWhere("TimeIn <= '2014-06-30 23:55:00'")
+                    //->andWhere("EmployeeId = '1078'")
                     ->order("EmployeeId asc, TimeIn asc")
                     ->queryAll();
             $i = 0;
