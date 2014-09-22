@@ -62,6 +62,7 @@ class EmployeePosition extends CActiveRecord
 			'Position' => 'Position',
 		);
 	}
+	
 
 	/**
 	 * Retrieves a list of models based on the current search/filter conditions.

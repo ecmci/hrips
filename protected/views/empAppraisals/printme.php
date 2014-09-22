@@ -45,13 +45,13 @@ $(document).ready(function(){
 <tbody>
 <?php foreach($model->searchPrint()->data as $data){ ?>
 <tr>
-    <td><?php echo $data->ID; ?></td>
+    <td><?php echo $data->id; ?></td>
     <td><?php echo $data->emp->EmpName;  ?></td>
     <td><?php echo $data->raiseType->RaiseTypeCol;  ?></td>
-    <td><?php echo $data->ToSalary;  ?></td>
+    <td><?php echo $data->curMove;  ?></td>
     <td><?php echo $data->NightDiff;  ?></td>
     <td><?php echo $data->ExtraAllowance;  ?></td>
-    <td><?php echo date('F j, Y',strtotime($data->DateEffective));  ?></td>
+    <td><?php echo date('F j, Y',strtotime($data->effectdate));  ?></td>
     <td><?php echo $data->Notes;  ?></td>
     
 	

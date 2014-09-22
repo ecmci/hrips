@@ -8,23 +8,23 @@
 <fieldset class="myclass">
 	<table>
 		<tr>
-			<td><?php echo $form->label($model, 'ID'); ?>
-				<?php echo $form->textField($model, 'ID'); ?> <!--'ID/id'-->
+			<td><?php echo $form->label($model, 'id'); ?>
+				<?php echo $form->textField($model, 'id'); ?> <!--'ID/id'-->
 			</td>
-			<td><?php echo $form->label($model, 'EmpID'); ?> <!--'EmpID/empId'-->
-				<?php echo $form->dropDownList($model, 'EmpID', CHtml::listData(EmpInformation::model()->findAll(array('order'=>'EmpName ASC')),'EmpID','EmpName'),array('prompt'=>'All')); ?>
+			<td><?php echo '<label>'.'Employee Name'.'</label>';//$form->label($model, 'empId'); ?> <!--'EmpID/empId'-->
+				<?php //echo $form->dropDownList($model, 'empId', Yii::app()->Employee->getEmployeeList(),array('prompt'=>'All')); ?><?php echo $form->dropDownList($model, 'empId', CHtml::listData(EmpInformation::model()->findAll(array('order'=>'EmpName ASC')),'EmpID','EmpName'),array('prompt'=>'All')); ?>
 			</td>
 		</tr>
 		<tr>
-			<td><?php echo $form->label($model, 'RaiseTypeID'); ?> <!--'RaiseTypeID/RaiseType'-->
-			<?php echo $form->dropDownList($model, 'RaiseTypeID', CHtml::listData(EmpRaisetype::model()->findAll(array('order'=>'RaiseTypeCol ASC')),'recordid','RaiseTypeCol'),array('prompt'=>'All')); ?>
+			<td><?php echo $form->label($model, 'RaiseType'); ?> <!--'RaiseTypeID/RaiseType'-->
+			<?php echo $form->dropDownList($model, 'RaiseType', CHtml::listData(EmpRaisetype::model()->findAll(array('order'=>'RaiseTypeCol ASC')),'recordid','RaiseTypeCol'),array('prompt'=>'All')); ?>
 			</td>
 			<td>
-				<?php echo $form->label($model, 'DateEffective'); ?>  <!--'DateEffective/effectdate'-->
+				<?php echo $form->label($model, 'effectdate'); ?>  <!--'DateEffective/effectdate'-->
 				<?php $form->widget('zii.widgets.jui.CJuiDatePicker', array(
 					'model' => $model,
-					'attribute' => 'DateEffective', //<!--'DateEffective/effectdate'-->
-					'value' => $model->DateEffective, //<!--'DateEffective/effectdate'-->
+					'attribute' => 'effectdate', //<!--'DateEffective/effectdate'-->
+					'value' => $model->effectdate, //<!--'DateEffective/effectdate'-->
 					'options' => array(
 						'showButtonPanel' => true,
 						'changeYear' => true,

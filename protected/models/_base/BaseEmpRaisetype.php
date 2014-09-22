@@ -42,7 +42,8 @@ abstract class BaseEmpRaisetype extends GxActiveRecord {
 
 	public function relations() {
 		return array(
-			'empAppraisals' => array(self::HAS_MANY, 'EmpAppraisals', 'RaiseTypeID'), //RaiseTypeID
+												//EmpAppraisals
+			'empAppraisals' => array(self::HAS_MANY, 'EmpAppraisals', 'RaiseType'), //RaiseTypeID
 		);
 	}
 

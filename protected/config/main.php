@@ -23,6 +23,7 @@ return array(
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
 		'otextraction',
+    'pds',
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'admin',
@@ -30,7 +31,7 @@ return array(
 				'ext.giix-core', // giix generators
 			),
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
-			'ipFilters'=>array('127.0.0.1','192.168.1.48'),
+			'ipFilters'=>array('127.0.0.1','192.168.1.48','192.168.1.254'),
 			//'db'=>'tcdb',
 		),
 		

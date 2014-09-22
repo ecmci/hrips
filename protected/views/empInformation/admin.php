@@ -10,7 +10,7 @@ $this->menu=array(
 	//array('label'=>'List EmpInformation', 'url'=>array('index')),
 	//array('label'=>'Create PDS', 'url'=>array('create')),
 	array('label'=>'View my PDS', 'url'=>array('view', 'id'=>Yii::app()->user->emp_id)),
-	array('label'=>'Salary History', 'url'=>array('EmpAppraisals/admin')),
+	array('label'=>'Employee Appraisal', 'url'=>array('EmpAppraisals/admin')),
 	//array('label'=>'Salary Appraisal', 'url'=>array('EmpAppraisals/admin')),
 	array('label'=>'Generate Reports', 'url'=>array('ReportViewer/index'))
 	

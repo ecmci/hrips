@@ -845,7 +845,7 @@ class HrisLoaApplication extends BaseHrisLoaApplication {
                 $this->sup_approve = $action;
                 $this->sup_approve_datetime = $now;
                 $this->sup_disapprove_reason = ($action == '0') ? $denial_reason : NULL;
-                $this->next_lvl_id = ($to_hr == '1') ? HrisAccessLvl::$HR : HrisAccessLvl::$MANAGER;
+                $this->next_lvl_id = ($to_hr == '1') ? HrisAccessLvl::$HR : HrisAccessLvl::$HR;
                 $this->next_lvl_id = ($action == '0') ? HrisAccessLvl::$ULTIMATELY_DENIED : $this->next_lvl_id;
                 $success = true;
                 break;

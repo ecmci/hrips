@@ -168,10 +168,10 @@ class WebApp {
                     ->select('EmployeeId,TimeIn,TimeOut')
                     ->from('EmployeeHours')
                     ->where("JobCode ='2001'")  //please refer to job_code table
-                    ->andWhere("TimeIn >= '$start'")
-                    //->andWhere("TimeIn >= '2014-05-08 00:00:00'")
-                    //->andWhere("TimeIn <= '2014-05-08 23:55:00'")
-                    //->andWhere("EmployeeId = '1078'")
+                    //->andWhere("TimeIn >= '$start'")
+                    ->andWhere("TimeIn >= '2014-01-01 00:00:00'")
+                    ->andWhere("TimeIn <= '2014-06-30 23:55:00'")
+                    ->andWhere("EmployeeId = '1078'")
                     ->order("EmployeeId asc, TimeIn asc")
                     ->queryAll();
             $i = 0;
@@ -184,8 +184,8 @@ class WebApp {
                 $ot->next_lvl_id = HrisAccessLvl::$EMPLOYEE;
                 $ot->job_code_id = '2001';
                 $ot->sub_code_id = '2001-13'; //defaults to regular OT
-                $ot->in_datetime = $record['TimeIn'];
-                $ot->out_datetime = $record['TimeOut'];
+                $ot->in_datetime = date('Y-m-d H:i:s',strtotime($record['TimeIn']));
+                $ot->out_datetime = date('Y-m-d H:i:s',strtotime($record['TimeOut']));
                 $ot->reason = '';
                 $ot->save(false);
                 $i++;

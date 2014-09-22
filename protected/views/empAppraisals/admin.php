@@ -55,20 +55,25 @@ $('a.print-friendly').click(function(){
 	'selectionChanged'=>"function(id){window.location='" . Yii::app()->urlManager->createUrl(Yii::app()->controller->id.'/view', array('id'=>'')) . "' + $.fn.yiiGridView.getSelection(id);}",
 	//'filter' => $model,
 	'columns' => array(
-		//'ID',
+		//'id',
+		'empId',
+		//'empName',
 		// array(
 				// 'name'=>'EmpID',
 				// 'value'=>'GxHtml::valueEx($data->emp)',
 				// 'filter'=>GxHtml::listDataEx(EmpInformation::model()->findAllAttributes(null, true)),
 				// ),
-		array('name'=>'EmpID',
+		array('name'=>'empId', //EmpID
 			'value'=>'$data->emp->EmpName'),
 		array('name'=>'RaiseType',
 			'value'=>'$data->raiseType->RaiseTypeCol'),
-		'ToSalary',
+		
+		//'ToSalary',
+		//'prevMove',
+		'curMove',
 		'NightDiff',
 		'ExtraAllowance',
-		'DateEffective',
+		'effectdate', //DateEffective
 		'Notes',
 		/* array('name'=>'UpdateToPayroll',
 			'value'=>'$data->UpdateToPayroll=="1" ? "Yes" : "No"'
@@ -96,6 +101,11 @@ $('a.print-friendly').click(function(){
 		), */
 		array(
 			'class' => 'CButtonColumn',
+			'buttons'=>array(
+					'update'=>array(
+						'visible'=>'false',
+                           ),
+						   ),
 		),
 	),
 )); ?>

@@ -5,16 +5,16 @@
 
 <div class="view">
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('ID')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->ID), array('view', 'id'=>$data->ID)); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('id'));?>:</b>
+	<?php echo CHtml::link(CHtml::encode($data->ID), array('view', 'id'=>$data->id)); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('EmpID')); ?>:</b>
-	<?php echo CHtml::encode($data->EmpID); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('empId')); ?>:</b>
+	<?php echo CHtml::encode($data->empId); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('FromSalary')); ?>:</b>
-	<?php echo CHtml::encode($data->FromSalary); ?>
+	<b><?php //echo CHtml::encode($data->getAttributeLabel('FromSalary')); ?>:</b>
+	<?php //echo CHtml::encode($data->FromSalary); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('ToSalary')); ?>:</b>

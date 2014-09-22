@@ -33,6 +33,7 @@ class EmpInformation extends EmpInformation0 {
         $this->DateHire = $e->Date_Hired;
     }
 
+
     /**
      * Do after save actions
      * @return type

@@ -79,18 +79,20 @@ class EmpAppraisalsController extends Controller
 		if(isset($_POST['EmpAppraisals']))
 		{
 			$model->attributes=$_POST['EmpAppraisals'];
-			$NewSalary=$_POST['EmpAppraisals']['ToSalary'];
-			$modelID=$_POST['EmpAppraisals']['EmpID'];
-			$modelDate=$_POST['EmpAppraisals']['DateEffective'];
+			$NewSalary=$_POST['EmpAppraisals']['curMove']; //ToSalary
+			$modelID=$_POST['EmpAppraisals']['empId']; //EmpID
+			//$modelName=$_POST['EmpAppraisals']['empName'];
+			$modelDate=$_POST['EmpAppraisals']['effectdate']; //DateEffective
 			$model->UpdateToPayroll = (isset($_POST['chkUpdateToPayroll'])) ? "1" : "0";
 			$model->ShowNotif  = (isset($_POST['chkUpdateToPayroll'])) ? "1" : "0";
 			$model->PayrollSync  = (isset($_POST['chkUpdateToPayroll'])) ? "0" : "1";
-			$model->DateAdded = date('Y-m-d H:i:s');
-			$model->AddedBy = Yii::app()->user->emp_id;
+			//$model->empName = $this->empName;
+			$model->createddate = date('Y-m-d H:i:s'); //DateAdded
+			$model->createdby = Yii::app()->user->emp_id; //AddedBy
 			/*if to notify payroll master = 1, payroll sync =0, if you dont want to notify payroll master, payroll sync = 1, meaning this salary change
 			has already been implemented*/
 			if($model->save()){
-				$this->redirect(array('view','id'=>$model->ID));
+				$this->redirect(array('view','id'=>$model->id)); //ID
 				/* $dateToday=date('Y-m-d');
 				if (isset($_POST['chkUpdateToPayroll']) && ($dateToday>=$modelDate)) {
 					$sqlUpdate = "UPDATE employee SET Monthly_Basic='$NewSalary' WHERE emp_id='$modelID'";
@@ -104,6 +106,7 @@ class EmpAppraisalsController extends Controller
 			'model'=>$model,
 		));
 	}
+
 
 	/**
 	 * Updates a particular model.

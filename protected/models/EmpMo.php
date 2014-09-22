@@ -42,7 +42,7 @@ class EmpMo extends CActiveRecord
 		return 'emp_mov';
 	}
 		public static function label($n = 1) {
-		return Yii::t('app', 'Salary History|Salary History', $n);
+		return Yii::t('app', 'Employee Appraisal|Employee Appraisal', $n);
 	}
 	
 		public static function representingColumn() {
@@ -57,7 +57,7 @@ class EmpMo extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('empId, empName, movType, effectdate, createddate, createdby', 'required'),
+			array('empId, effectdate, UpdateToPayroll, RaiseType', 'required'),  //createddate, createdby
 			array('empId, RaiseType, UpdateToPayroll, ShowNotif, PayrollSync', 'numerical', 'integerOnly'=>true),
 			array('empName, prevMove, curMove, movType, createdby', 'length', 'max'=>50),
 			array('NightDiff, ExtraAllowance, IncreaseTotal', 'length', 'max'=>20),
@@ -68,6 +68,45 @@ class EmpMo extends CActiveRecord
 		);
 	}
 
+		public function beforeSave(){	
+		//$this->empName = EmpInformation::model()->find('empName=:empName',array(':empId'=>$this->empId,));
+		$e = EmpInformation::model()->find('EmpID = '.$this->empId);
+		$this->empName = $e->LastName . ', ' . $e->FirstName;
+		
+		switch($this->RaiseType){
+		
+		case "1":
+		$this->movType = "Employment Status";
+		break;
+		case "2":
+		$this->movType = "Employment Status";
+		break;
+		case "3":
+		$this->movType = "Position";
+		break;
+		case "4":
+		$this->movType = "Department";
+		break;
+		case "5":
+		$this->movType = "Salary";
+		break;
+		case "6":
+		$this->movType = "Salary";
+		break;
+		case "7":
+		$this->movType = "Salary";
+		break;
+		case "8":
+		$this->movType = "Others";
+		break;
+		default:
+		$this->movType = "Salary";
+		}
+	
+	return parent::beforeSave();
+	
+	}
+	
 	/**
 	 * @return array relational rules.
 	 */
@@ -79,14 +118,18 @@ class EmpMo extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 		
-			
+			//'VarName'=>array('RelationType', 'ClassName', 'ForeignKey', ...additional options)
 			'raiseType' => array(self::BELONGS_TO, 'EmpRaisetype', 'RaiseType'),
-			'emp' => array(self::BELONGS_TO, 'EmpInformation', 'empId'),
+			'emp' => array(self::BELONGS_TO, 'EmpInformation', 'empId'), //'emp' => array(self::BELONGS_TO, 'EmpInformation', 'empId'),
 			'addedBy' => array(self::BELONGS_TO, 'Employee', 'createdby'),
-
+			//'dept' => array(self::BELONGS_TO,'EmployeePosition','Position'),
 		);
 	}
-
+	
+		public function pivotModels() {
+		return array(
+		);
+	}
 	/**
 	 * @return array customized attribute labels (name=>label)
 	 */
@@ -94,10 +137,11 @@ class EmpMo extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'empId' => 'Emp',
-			'empName' => 'Emp Name',
-			'prevMove' => 'Prev Move',
-			'curMove' => 'Cur Move',
+			'empId' => 'Employee',
+			'EmpID' => 'Employee',
+			'empName' => 'Employee Name',
+			'prevMove' => 'From',
+			'curMove' => 'Salary',
 			'movType' => 'Mov Type',
 			'RaiseType' => 'Raise Type',
 			'NightDiff' => 'Night Diff',
@@ -107,9 +151,12 @@ class EmpMo extends CActiveRecord
 			'UpdateToPayroll' => 'Update To Payroll',
 			'ShowNotif' => 'Show Notif',
 			'PayrollSync' => 'Payroll Sync',
-			'effectdate' => 'Effectdate',
-			'createddate' => 'Createddate',
-			'createdby' => 'Createdby',
+			'effectdate' => 'Effectivity date',
+			'createddate' => 'Created Date',
+			'createdby' => 'Created By',
+			'emp' => null,
+			'addedBy' => null,
+			'raiseType' => null,
 		);
 	}
 
@@ -144,6 +191,19 @@ class EmpMo extends CActiveRecord
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
+		));
+	}
+		public function searchPrint() {
+		$criteria = new CDbCriteria;
+
+		$criteria->compare('id', $this->id);
+		$criteria->compare('empId', $this->empId);
+		$criteria->compare('RaiseType', $this->RaiseType);
+		$criteria->compare('effectdate', $this->effectdate, true);
+		
+		return new CActiveDataProvider($this, array(
+			'criteria' => $criteria,			
+			'pagination'=>false,
 		));
 	}
 }

@@ -29,15 +29,15 @@ return array(
         'db'=>array(
     			'connectionString' => 'mysql:host=localhost;dbname=evacare',
     			'emulatePrepare' => true,
-    			'username' => 'hris',
-    			'password' => 'hris5524',
+    			'username' => 'root',
+    			'password' => 'admin1937',
     			'charset' => 'utf8',
     		),
     		
     		'tcdb'=>array(		
     			'class'=>'CDbConnection',
-    			//'connectionString' => 'sqlsrv:Server=localhost\TIMECLOCKPLUS,1433;Database=TimeClockPlus',
-				'connectionString' => 'sqlsrv:Server=192.168.1.222\TIMECLOCKPLUS,1433;Database=TimeClockPlus',
+				  //'connectionString' => 'sqlsrv:Server=192.168.1.222\TIMECLOCKPLUS,1433;Database=TimeClockPlus', //for Windows
+          'connectionString' => 'dblib:host=192.168.1.222;dbname=TimeClockPlus', //for Linux
     			'username' => 'hris',
     			'password' => 'hris5524',
     			'charset' => 'utf8',

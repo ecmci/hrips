@@ -1,0 +1,2166 @@
+2014/09/22 15:01:25 [error] [app] CDbConnection failed to open the DB connection: could not find driver
+2014/09/22 15:04:26 [info] [app] Extracting OT Records as of 2014-09-21 16:30:00 ...
+2014/09/22 15:04:26 [info] [app] Recorded 0 of 0 OT record(s) imported from TimeClock.
+2014/09/22 15:05:31 [info] [app] Extracting OT Records as of 2014-09-21 16:30:00 ...
+2014/09/22 15:05:31 [info] [app] Recorded 0 of 0 OT record(s) imported from TimeClock.
+2014/09/22 15:05:38 [info] [app] Extracting OT Records as of 2014-09-21 16:30:00 ...
+2014/09/22 15:05:38 [info] [app] Recorded 0 of 0 OT record(s) imported from TimeClock.
+2014/09/22 15:05:47 [info] [app] Extracting OT Records as of 2014-09-21 16:30:00 ...
+2014/09/22 15:05:47 [info] [app] Recorded 0 of 0 OT record(s) imported from TimeClock.
+2014/09/22 15:06:00 [info] [app] Extracting OT Records as of 2014-09-21 16:30:00 ...
+2014/09/22 15:06:00 [info] [app] Recorded 0 of 0 OT record(s) imported from TimeClock.
+2014/09/22 15:06:40 [info] [app] Extracting OT Records as of 2014-09-21 16:30:00 ...
+2014/09/22 15:06:40 [error] [app] CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'hris'@'localhost' (using password: YES)
+2014/09/22 15:07:43 [error] [app] Object configuration must be an array containing a "class" element.
+2014/09/22 15:14:40 [info] [app] Extracting OT Records as of 2014-09-21 16:30:00 ...
+2014/09/22 15:14:40 [error] [app] CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'hris'@'localhost' (using password: YES)
+2014/09/22 15:16:19 [info] [app] Extracting OT Records as of 2014-09-21 16:30:00 ...
+2014/09/22 15:16:19 [info] [app] Extracted OT of 1078
+2014/09/22 15:16:19 [info] [app] Extracted OT of 1078
+2014/09/22 15:16:19 [info] [app] Extracted OT of 1078
+2014/09/22 15:16:19 [info] [app] Extracted OT of 1078
+2014/09/22 15:16:19 [info] [app] Extracted OT of 1078
+2014/09/22 15:16:19 [info] [app] Extracted OT of 1078
+2014/09/22 15:16:19 [info] [app] Extracted OT of 1078
+2014/09/22 15:16:19 [info] [app] Extracted OT of 1078
+2014/09/22 15:16:19 [info] [app] Extracted OT of 1078
+2014/09/22 15:16:19 [info] [app] Extracted OT of 1078
+2014/09/22 15:16:19 [info] [app] Extracted OT of 1078
+2014/09/22 15:16:19 [info] [app] Extracted OT of 1078
+2014/09/22 15:16:19 [info] [app] Extracted OT of 1078
+2014/09/22 15:16:19 [info] [app] Extracted OT of 1078
+2014/09/22 15:16:19 [info] [app] Extracted OT of 1078
+2014/09/22 15:16:19 [info] [app] Extracted OT of 1078
+2014/09/22 15:16:19 [info] [app] Extracted OT of 1078
+2014/09/22 15:16:19 [info] [app] Extracted OT of 1078
+2014/09/22 15:16:19 [info] [app] Extracted OT of 1078
+2014/09/22 15:16:19 [info] [app] Extracted OT of 1078
+2014/09/22 15:16:19 [info] [app] Recorded 20 of 20 OT record(s) imported from TimeClock.
+2014/09/22 15:20:10 [info] [app] Extracting OT Records as of 2014-09-21 16:30:00 ...
+2014/09/22 15:20:10 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => Jan  6 2014 01:15:00:000PM
+    [out_datetime] => Jan  6 2014 02:45:00:000PM
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:10 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:10 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => Jan  9 2014 09:30:00:000AM
+    [out_datetime] => Jan  9 2014 02:15:00:000PM
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:10 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:10 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => Feb  3 2014 09:00:00:000AM
+    [out_datetime] => Feb  3 2014 11:45:00:000AM
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:10 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:10 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => Feb 17 2014 08:45:00:000AM
+    [out_datetime] => Feb 17 2014 11:00:00:000AM
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:10 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:10 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => Feb 25 2014 09:15:00:000AM
+    [out_datetime] => Feb 25 2014 01:00:00:000PM
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:10 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:10 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => Feb 26 2014 09:15:00:000AM
+    [out_datetime] => Feb 26 2014 12:30:00:000PM
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:10 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:10 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => Feb 27 2014 10:45:00:000AM
+    [out_datetime] => Feb 27 2014 01:45:00:000PM
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:10 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:10 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => Mar  6 2014 10:15:00:000PM
+    [out_datetime] => Mar  6 2014 11:00:00:000PM
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:10 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:10 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => Mar  7 2014 10:00:00:000PM
+    [out_datetime] => Mar  7 2014 11:00:00:000PM
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:10 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:10 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => Mar 12 2014 03:15:00:000PM
+    [out_datetime] => Mar 12 2014 04:15:00:000PM
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:10 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:10 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => Mar 13 2014 07:00:00:000PM
+    [out_datetime] => Mar 13 2014 10:00:00:000PM
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:10 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:10 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => Mar 14 2014 07:30:00:000PM
+    [out_datetime] => Mar 14 2014 10:00:00:000PM
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:10 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:10 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => Mar 20 2014 09:00:00:000AM
+    [out_datetime] => Mar 20 2014 12:15:00:000PM
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:10 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:10 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => Mar 21 2014 09:15:00:000AM
+    [out_datetime] => Mar 21 2014 12:30:00:000PM
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:10 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:10 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => Mar 22 2014 09:00:00:000AM
+    [out_datetime] => Mar 22 2014 11:30:00:000AM
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:10 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:10 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => Jun 12 2014 10:45:00:000PM
+    [out_datetime] => Jun 13 2014 03:06:00:000AM
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:10 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:10 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => Jun 13 2014 04:06:00:000AM
+    [out_datetime] => Jun 13 2014 08:00:00:000AM
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:10 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:10 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => Jun 14 2014 09:45:00:000AM
+    [out_datetime] => Jun 14 2014 10:45:00:000AM
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:10 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:10 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => Jun 14 2014 02:30:00:000PM
+    [out_datetime] => Jun 14 2014 07:15:00:000PM
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:10 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:10 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => Jun 16 2014 03:00:00:000AM
+    [out_datetime] => Jun 16 2014 03:45:00:000AM
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:10 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:10 [info] [app] Recorded 20 of 20 OT record(s) imported from TimeClock.
+2014/09/22 15:20:56 [info] [app] Extracting OT Records as of 2014-09-21 16:30:00 ...
+2014/09/22 15:20:56 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 
+    [out_datetime] => 
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:56 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:56 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 
+    [out_datetime] => 
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:56 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:56 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 
+    [out_datetime] => 
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:56 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:56 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 
+    [out_datetime] => 
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:56 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:56 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 
+    [out_datetime] => 
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:56 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:56 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 
+    [out_datetime] => 
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:56 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:56 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 
+    [out_datetime] => 
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:56 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:56 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 
+    [out_datetime] => 
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:56 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:56 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 
+    [out_datetime] => 
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:56 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:56 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 
+    [out_datetime] => 
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:56 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:56 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 
+    [out_datetime] => 
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:56 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:56 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 
+    [out_datetime] => 
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:56 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:56 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 
+    [out_datetime] => 
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:56 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:56 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 
+    [out_datetime] => 
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:56 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:56 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 
+    [out_datetime] => 
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:56 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:56 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 
+    [out_datetime] => 
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:56 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:56 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 
+    [out_datetime] => 
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:56 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:56 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 
+    [out_datetime] => 
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:56 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:56 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 
+    [out_datetime] => 
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:56 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:56 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 
+    [out_datetime] => 
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:20:56 [info] [app] Extracted OT of 1078
+2014/09/22 15:20:56 [info] [app] Recorded 20 of 20 OT record(s) imported from TimeClock.
+2014/09/22 15:22:36 [info] [app] Extracting OT Records as of 2014-09-21 16:30:00 ...
+2014/09/22 15:22:36 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 2014-01-06 13:15:00
+    [out_datetime] => 2014-01-06 14:45:00
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:22:36 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:36 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 2014-01-09 09:30:00
+    [out_datetime] => 2014-01-09 14:15:00
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:22:36 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:36 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 2014-02-03 09:00:00
+    [out_datetime] => 2014-02-03 11:45:00
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:22:36 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:36 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 2014-02-17 08:45:00
+    [out_datetime] => 2014-02-17 11:00:00
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:22:36 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:36 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 2014-02-25 09:15:00
+    [out_datetime] => 2014-02-25 13:00:00
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:22:36 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:36 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 2014-02-26 09:15:00
+    [out_datetime] => 2014-02-26 12:30:00
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:22:36 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:36 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 2014-02-27 10:45:00
+    [out_datetime] => 2014-02-27 13:45:00
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:22:36 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:36 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 2014-03-06 22:15:00
+    [out_datetime] => 2014-03-06 23:00:00
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:22:36 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:36 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 2014-03-07 22:00:00
+    [out_datetime] => 2014-03-07 23:00:00
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:22:36 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:36 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 2014-03-12 15:15:00
+    [out_datetime] => 2014-03-12 16:15:00
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:22:36 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:36 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 2014-03-13 19:00:00
+    [out_datetime] => 2014-03-13 22:00:00
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:22:36 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:36 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 2014-03-14 19:30:00
+    [out_datetime] => 2014-03-14 22:00:00
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:22:36 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:36 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 2014-03-20 09:00:00
+    [out_datetime] => 2014-03-20 12:15:00
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:22:36 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:36 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 2014-03-21 09:15:00
+    [out_datetime] => 2014-03-21 12:30:00
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:22:36 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:36 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 2014-03-22 09:00:00
+    [out_datetime] => 2014-03-22 11:30:00
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:22:36 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:36 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 2014-06-12 22:45:00
+    [out_datetime] => 2014-06-13 03:06:00
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:22:36 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:36 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 2014-06-13 04:06:00
+    [out_datetime] => 2014-06-13 08:00:00
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:22:36 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:36 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 2014-06-14 09:45:00
+    [out_datetime] => 2014-06-14 10:45:00
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:22:36 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:36 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 2014-06-14 14:30:00
+    [out_datetime] => 2014-06-14 19:15:00
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:22:36 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:36 [info] [app] Array
+(
+    [replicated_to_emp_hrs] => 0
+    [is_entered] => 0
+    [dept_id] => 7
+    [emp_id] => 1078
+    [next_lvl_id] => 1
+    [job_code_id] => 2001
+    [sub_code_id] => 2001-13
+    [in_datetime] => 2014-06-16 03:00:00
+    [out_datetime] => 2014-06-16 03:45:00
+    [reason] => 
+    [id] => 
+    [ifexistid] => 
+    [approved_hours] => 
+    [sup_id] => 
+    [sup_approve] => 
+    [sup_approve_datetime] => 
+    [sup_disapprove_reason] => 
+    [mgr_id] => 
+    [mgr_approve] => 
+    [mgr_approve_datetime] => 
+    [mgr_disapprove_reason] => 
+    [hr_id] => 
+    [hr_approve] => 
+    [hr_approve_datetime] => 
+    [hr_disapprove_reason] => 
+    [employer_id] => 
+    [employer_approve] => 
+    [employer_approve_datetime] => 
+    [employer_disapprove_reason] => 
+    [timestamp] => 
+)
+
+2014/09/22 15:22:36 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:36 [info] [app] Recorded 20 of 20 OT record(s) imported from TimeClock.
+2014/09/22 15:22:49 [info] [app] Extracting OT Records as of 2014-09-21 16:30:00 ...
+2014/09/22 15:22:49 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:49 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:49 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:49 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:49 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:49 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:49 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:49 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:49 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:49 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:49 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:49 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:49 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:49 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:49 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:49 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:49 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:49 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:49 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:49 [info] [app] Extracted OT of 1078
+2014/09/22 15:22:49 [info] [app] Recorded 20 of 20 OT record(s) imported from TimeClock.

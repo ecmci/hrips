@@ -124,8 +124,8 @@ class EmpInformation0 extends GxActiveRecord
 	{
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
-		return array(
-			'empAppraisals' => array(self::HAS_MANY, 'EmpAppraisals', 'EmpID'),
+		return array(								//EmpAppraisals
+			'empAppraisals' => array(self::HAS_MANY, 'EmpAppraisals', 'EmpID'), 
 			'empChildrens' => array(self::HAS_MANY, 'EmpChildren', 'EmpID'),
 			'empCivilservices' => array(self::HAS_MANY, 'EmpCivilservice', 'EmpID'),
 			'empEducbgs' => array(self::HAS_MANY, 'EmpEducbg', 'EmpID'),
@@ -269,7 +269,6 @@ class EmpInformation0 extends GxActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
-	
 	
 	public function getLastupdated()
 	{
